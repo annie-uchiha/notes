@@ -1,16 +1,21 @@
 import React from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "./Header.scss";
 
 const Header = ({ toggleTheme, theme }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
+
+  const handleThemeToggle = () => {
+    toggleTheme();
+  };
 
   return (
-    <header>
+    <header className={`header ${theme}`}>
       <nav>
-        <button onClick={() => history.push("/quiz")}>Quiz</button>
-        <button onClick={() => history.push("/notes")}>Notes</button>
-        <button onClick={toggleTheme}>
+        <button onClick={() => navigate("/quiz")}>Quiz</button>
+        <button onClick={() => navigate("/notes")}>Notes</button>
+        <button className="theme-toggle" onClick={handleThemeToggle}>
           {theme === "dark" ? <FaSun /> : <FaMoon />}
         </button>
       </nav>

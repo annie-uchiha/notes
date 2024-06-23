@@ -1,0 +1,42 @@
+.header {
+  background-color: #f0f0f0;
+  color: #333;
+
+  &.dark {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+
+  nav {
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+      font-size: 1.2rem;
+      margin-right: 10px;
+      justify-content: end;
+    }
+
+    button.theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #ccc;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+
+      svg {
+        font-size: 18px;
+      }
+    }
+
+    .dark button.theme-toggle {
+      background-color: #555;
+      color: #f0f0f0;
+    }
+  }
+}
