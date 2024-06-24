@@ -82,6 +82,15 @@ function Notes() {
         </section>
         <section className="left-section">
           <h1>What are the main data types?</h1>
+          <h3>
+            The main difference between a primitive data type and the complex
+            data type lies in how they are stored and manipulated. The primitive
+            DT hold a single simple value (string, boolean, null, undefined) and
+            when manipulated you operate on its value. The complex DT hold
+            multiple data types, meaning they hold multiple values and are
+            stored by reference (objects) - you operate on a reference to the
+            value not the value itself.
+          </h3>
           <ul>
             <li>
               strings - textual data enclosed in "" or ``; can contain letters,
@@ -113,6 +122,61 @@ function Notes() {
               objects - complex data type; collection of key-value pairs, which
               stores and organizes data for more complex manipulation
             </li>
+          </ul>
+        </section>
+        <section className="right-section">
+          <h1>Difference between NaN, null and undefined</h1>
+
+          <ul>
+            <li>
+              NaN - Not a Number; it is returned after a math operation fails to
+              return a valid number; it is a numeric data type but not equal to
+              any other value, including itself;
+            </li>
+            <li>
+              null - intentional absence of any object value; used to represent
+              a variable that should explicitly not have a value;
+            </li>
+            <li>
+              undefined - the variable has been declared but not been assigned a
+              value;
+            </li>
+          </ul>
+        </section>
+        <section className="left-section">
+          <h1>Operators</h1>
+          <ul>
+            <li>
+              Math operators: +, -, *, /, %, **; == (checks for equalit); ===
+              (compares value and type); !== (strict inequality, evaluates to
+              true if the operands are not equal and/or not of the same type);
+              != (inequality operator; true if the operands are not equal,
+              regardless of their type); etc.{" "}
+            </li>
+            <li>
+              Logical operators: && (AND both requirements need to be met); OR
+              (one of the requirements need to be met); !A (NOT - gives the
+              opposite value);
+            </li>
+          </ul>
+        </section>
+        <section className="right-section">
+          <h1>Type Conversions</h1>
+
+          <ul>
+            <li>parseInt() - parse a string and convert it to integer;</li>
+            <li>
+              parseFloat() - parse a string and convert it to floating-point
+              number;
+            </li>
+            <li>toString() - convert a value to its string representation;</li>
+            <li>
+              toFixed() - format a number with a specified number of digits
+              after the decimal point and return the resulting string
+              representation;
+            </li>
+            <li>Number() - a value to e number</li>
+            <li>String() - a value to a string</li>
           </ul>
         </section>
       </div>
