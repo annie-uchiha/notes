@@ -5,14 +5,28 @@ function Notes() {
   return (
     <section className="notes">
       <h1>Notes Page</h1>
+      <ul className="notes__anchors">
+        <li>
+          <a href="#html5">HTML5</a>
+        </li>
+        <li>
+          <a href="#css">CSS3</a>
+        </li>
+        <li>
+          <a href="#JavaScript">JavaScript</a>
+        </li>
+        <li>
+          <a href="#reactJS">React.js</a>
+        </li>
+      </ul>
       <div>
-        <h2>HTML5</h2>
+        <h2 id="html5">HTML5</h2>
       </div>
       <div>
-        <h2>CSS3</h2>
+        <h2 id="css">CSS3</h2>
       </div>
       <div>
-        <h2>JavaScript</h2>
+        <h2 id="JavaScript">JavaScript</h2>
         <section className="left-section">
           <h1>What is JavaScript?</h1>
           <h3>
@@ -61,9 +75,44 @@ function Notes() {
             declared it.
           </h3>
         </section>
+        <section className="left-section">
+          <h1>What are the main data types?</h1>
+          <ul>
+            <li>
+              strings - textual data enclosed in "" or ``; can contain letters,
+              numbers, symbols, whitespace, special characters;
+            </li>
+            <li>
+              numbers - numeric values; including integers, special nu,eric
+              values like NaN and Infinity;
+            </li>
+            <li>
+              booleans - logical value that can be true or false; used to make
+              decisions, control the flow of code (conditions, loops, logical
+              operators)
+            </li>
+            <li>
+              symbol - primitive data type that presents unique and immutable
+              value;
+            </li>
+            <li>
+              undefined - a variable has been declared but has not been given a
+              value;
+            </li>
+            <li>null - intentional absence of value;</li>
+            <li>
+              bigInt - built-in object that provides a way to represent integers
+              with precision;
+            </li>
+            <li>
+              objects - complex data type; collection of key-value pairs, which
+              stores and organizes data for more complex manipulation
+            </li>
+          </ul>
+        </section>
       </div>
       <div>
-        <h2>React.js</h2>
+        <h2 id="reactJS">React.js</h2>
       </div>
     </section>
   );

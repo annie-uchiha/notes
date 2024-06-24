@@ -7,6 +7,16 @@
   color: rgb(43, 38, 117);
 }
 
+.notes__anchors {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-decoration: none;
+  li {
+    text-decoration: none;
+  }
+}
+
 .left-section {
   background-color: antiquewhite;
   padding-left: 10px;
