@@ -1,0 +1,8 @@
+.notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(43, 38, 117);
+}
