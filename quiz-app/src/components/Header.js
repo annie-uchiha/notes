@@ -12,7 +12,7 @@ const Header = ({ toggleTheme, theme }) => {
 
   return (
     <header className={`header ${theme}`}>
-      <nav>
+      <nav className="nav">
         <button onClick={() => navigate("/quiz")}>Quiz</button>
         <button onClick={() => navigate("/notes")}>Notes</button>
         <button className="theme-toggle" onClick={handleThemeToggle}>
