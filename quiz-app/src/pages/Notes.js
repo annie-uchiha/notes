@@ -20,19 +20,24 @@ function Notes() {
         </li>
       </ul>
       <div>
-        <h2 id="html5">HTML5</h2>
+        <h2 className="notes__title" id="html5">
+          HTML5
+        </h2>
       </div>
       <div>
-        <h2 id="css">CSS3</h2>
+        <h2 className="notes__title" id="css">
+          CSS3
+        </h2>
       </div>
       <div>
-        <h2 id="JavaScript">JavaScript</h2>
+        <h2 className="notes__title" id="JavaScript">
+          JavaScript
+        </h2>
         <section className="left-section">
           <h1>What is JavaScript?</h1>
           <h3>
             Weakly typed programming language used for Front-end development to
-            enhance website interactivity and dynamics through its
-            object-oriented capabilities.
+            create interactive and dynamic web applications.
           </h3>
         </section>
         <section className="right-section">
@@ -112,7 +117,9 @@ function Notes() {
         </section>
       </div>
       <div>
-        <h2 id="reactJS">React.js</h2>
+        <h2 className="notes__title" id="reactJS">
+          React.js
+        </h2>
       </div>
     </section>
   );

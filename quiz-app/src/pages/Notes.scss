@@ -3,8 +3,11 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  text-decoration: underline;
   color: rgb(43, 38, 117);
+}
+
+.notes__title {
+  text-decoration: underline;
 }
 
 .notes__anchors {
