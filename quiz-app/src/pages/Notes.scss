@@ -6,3 +6,21 @@
   text-decoration: underline;
   color: rgb(43, 38, 117);
 }
+
+.left-section {
+  background-color: antiquewhite;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-decoration: none;
+}
+
+.right-section {
+  background-color: rgb(199, 148, 82);
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  text-decoration: none;
+}
