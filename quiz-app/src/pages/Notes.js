@@ -147,11 +147,11 @@ function Notes() {
           <h1>Operators</h1>
           <ul>
             <li>
-              Math operators: +, -, *, /, %, **; == (checks for equalit); ===
+              Math operators: +, -, *, /, %, **; == (checks for equality); ===
               (compares value and type); !== (strict inequality, evaluates to
               true if the operands are not equal and/or not of the same type);
               != (inequality operator; true if the operands are not equal,
-              regardless of their type); etc.{" "}
+              regardless of their type); etc.
             </li>
             <li>
               Logical operators: && (AND both requirements need to be met); OR
