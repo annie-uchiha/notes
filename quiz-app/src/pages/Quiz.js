@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import questionsData from "../data/questionsData";
+import "./Quiz.scss";
 
-const Quiz = () => {
+const Quiz = ({ theme }) => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentModuleIndex, setCurrentModuleIndex] = useState(0);
@@ -54,7 +55,7 @@ const Quiz = () => {
     }, 0);
 
     return (
-      <div>
+      <div className={`quiz-container ${theme}`}>
         <h1>Results</h1>
         <p>You got {correctAnswers} out of 40 correct.</p>
         <h2>Questions and Correct Answers</h2>
@@ -80,30 +81,34 @@ const Quiz = () => {
   }
 
   return (
-    <div>
+    <div className={`quiz-container ${theme}`}>
       {questions.length > 0 && (
-        <div>
+        <div className="quiz-content">
           <h2>{questions[currentQuestionIndex].question}</h2>
-          {questions[currentQuestionIndex].answers.map((answer, index) => (
-            <div key={index}>
-              <input
-                type="radio"
-                id={`question-${questions[currentQuestionIndex].id}-answer-${index}`}
-                name={`question-${questions[currentQuestionIndex].id}`}
-                value={answer}
-                checked={answers[questions[currentQuestionIndex].id] === answer}
-                onChange={() =>
-                  handleAnswer(questions[currentQuestionIndex].id, answer)
-                }
-              />
-              <label
-                htmlFor={`question-${questions[currentQuestionIndex].id}-answer-${index}`}
-              >
-                {answer}
-              </label>
-            </div>
-          ))}
-          <button onClick={handleNext}>
+          <div className="answers-container">
+            {questions[currentQuestionIndex].answers.map((answer, index) => (
+              <div key={index} className="answer-option">
+                <input
+                  type="radio"
+                  id={`question-${questions[currentQuestionIndex].id}-answer-${index}`}
+                  name={`question-${questions[currentQuestionIndex].id}`}
+                  value={answer}
+                  checked={
+                    answers[questions[currentQuestionIndex].id] === answer
+                  }
+                  onChange={() =>
+                    handleAnswer(questions[currentQuestionIndex].id, answer)
+                  }
+                />
+                <label
+                  htmlFor={`question-${questions[currentQuestionIndex].id}-answer-${index}`}
+                >
+                  {answer}
+                </label>
+              </div>
+            ))}
+          </div>
+          <button className="next-button" onClick={handleNext}>
             {currentQuestionIndex < 39 ? "Next" : "Submit"}
           </button>
         </div>
