@@ -1,0 +1,12 @@
+.home-container__title {
+  text-align: center;
+  padding-top: 15%;
+}
+
+.home-container__btn {
+  border-radius: 5px 20px;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 200px;
+  margin: 5% 45%;
+}
