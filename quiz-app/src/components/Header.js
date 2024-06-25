@@ -13,7 +13,7 @@ const Header = ({ toggleTheme, theme }) => {
   return (
     <header className={`header ${theme}`}>
       <nav className="nav">
-        <button onClick={() => navigate("/home")}>Home</button>
+        <button onClick={() => navigate("/")}>Home</button>
         <button onClick={() => navigate("/quiz")}>Quiz</button>
         <button onClick={() => navigate("/notes")}>Notes</button>
         <button className="theme-toggle" onClick={handleThemeToggle}>
