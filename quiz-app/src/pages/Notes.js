@@ -46,6 +46,30 @@ function Notes() {
         <h2 className="notes__title" id="css">
           CSS3
         </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What is CSS?</Accordion.Header>
+            <Accordion.Body className="left-section">
+              Cascading Style Sheets.
+            </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
+          <Accordion>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>What is box model?</Accordion.Header>
+            <Accordion.Body className="left-section">
+            The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.
+            </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
+          <Accordion>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>What is flexbox?</Accordion.Header>
+            <Accordion.Body className="left-section">
+            Flexbox is a CSS layout that makes it easier to design flexible and responsive layout structures without using float or positioning. It allows you to align items vertically and horizontally with space distribution.
+            </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
       </div>
       <div>
         <h2 className="notes__title" id="JavaScript">
