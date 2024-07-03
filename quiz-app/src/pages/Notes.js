@@ -25,6 +25,14 @@ function Notes() {
         <h2 className="notes__title" id="html5">
           HTML5
         </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What is HTML?</Accordion.Header>
+            <Accordion.Body className="left-section">
+              Hyper Text Markup Language. It defines the content and structure of web content. It is not a programming language.
+            </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
       </div>
       <div>
         <h2 className="notes__title" id="css">
