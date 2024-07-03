@@ -37,7 +37,7 @@ function Notes() {
           <Accordion.Item eventKey="1">
             <Accordion.Header>What are the semantic HTML elements?</Accordion.Header>
             <Accordion.Body className="left-section">
-              They clearly describe their meaning in a human and machine readable way: <header>, <footer>, <article>, <section>, <nav>.
+              They clearly describe their meaning in a human and machine readable way: header, footer, article, section, nav.
             </Accordion.Body>
           </Accordion.Item>
           </Accordion>
