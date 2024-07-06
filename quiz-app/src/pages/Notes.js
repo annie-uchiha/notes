@@ -248,7 +248,7 @@ function Notes() {
               </ul>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="9">
+          <Accordion.Item eventKey="10">
             <Accordion.Header>Ways to increase values</Accordion.Header>
             <Accordion.Body className="right-section">
               let a=5;
@@ -257,6 +257,18 @@ function Notes() {
               let a = 5;
               console.log(++a + a++);
               result:12
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="11">
+            <Accordion.Header>Loops</Accordion.Header>
+            <Accordion.Body className="right-section">
+              Executes block of code repeatedly as long as a specific condition is met.
+              <ul>
+                <li>for - repeats a block of code a certain number of times;</li>
+                <li>while - repeats a block of ocde while a specific condition is true</li>
+                <li>do ... while - similar to the while loop but it always executes the block of code at least once, even if the condition is false;
+                </li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
