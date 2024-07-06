@@ -2,8 +2,7 @@ import React from "react";
 import "./Notes.scss";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
-import boxModelImg from '../components/box-model.png';
-
+import boxModelImg from "../components/box-model.png";
 
 function Notes() {
   return (
@@ -61,13 +60,21 @@ function Notes() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>What is CSS?</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML 
-                (including XML dialects such as SVG, MathML, or XHTML). CSS describes how elements should be rendered on screen, on paper, 
-                in speech, or on other media. CSS is used to style HTML elements, controlling their appearance, layout, and behavior on the web page.
-                CSS consists of properties (such as color, font-size, margin) and values assigned to those properties.
-                The term "cascading" refers to the way CSS applies styles based on multiple rules. Specificity determines 
-                which rules are applied when there are conflicting styles.
-                CSS allows for responsive web design, enabling websites to adapt to different screen sizes and devices using media queries.</p>
+              <p>
+                CSS (Cascading Style Sheets) is a stylesheet language used to
+                describe the presentation of a document written in HTML or XML
+                (including XML dialects such as SVG, MathML, or XHTML). CSS
+                describes how elements should be rendered on screen, on paper,
+                in speech, or on other media. CSS is used to style HTML
+                elements, controlling their appearance, layout, and behavior on
+                the web page. CSS consists of properties (such as color,
+                font-size, margin) and values assigned to those properties. The
+                term "cascading" refers to the way CSS applies styles based on
+                multiple rules. Specificity determines which rules are applied
+                when there are conflicting styles. CSS allows for responsive web
+                design, enabling websites to adapt to different screen sizes and
+                devices using media queries.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -80,7 +87,11 @@ function Notes() {
                 HTML element. It consists of: content, padding, borders and
                 margins.
               </p>
-              <img className="notes__img" alt="box-model-img" src={boxModelImg}></img>
+              <img
+                className="notes__img"
+                alt="box-model-img"
+                src={boxModelImg}
+              ></img>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -98,8 +109,13 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>CSS selectors</Accordion.Header>
-            <Accordion.Body className="notes__section"><p>CSS selectors are patterns used to select the elements you want to style. 
-              Common selectors include element selectors, class selectors, ID selectors, and attribute selectors.</p></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                CSS selectors are patterns used to select the elements you want
+                to style. Common selectors include element selectors, class
+                selectors, ID selectors, and attribute selectors.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>Fonts, FontFace</Accordion.Header>
@@ -119,7 +135,12 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>CSS animations</Accordion.Header>
-            <Accordion.Body className="notes__section"><p>CSS supports animations and transitions, allowing for smooth and visually appealing changes to styles.</p></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                CSS supports animations and transitions, allowing for smooth and
+                visually appealing changes to styles.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
             <Accordion.Header>CSS GRID</Accordion.Header>
@@ -553,15 +574,16 @@ function Notes() {
                 flow); Opinionated (set of conventions and dictate how you
                 should structure your code); Integrated (provide everything
                 needed to build an application: routing, state management, data
-                binding and more). Popular frameworks: Angular, Vue.js, Svelte, Ember;
+                binding and more). Popular frameworks: Angular, Vue.js, Svelte,
+                Ember;
               </p>
               <p>
-              Library: Call-based (collection of functions
-                and utilities that your code calls to perform specific tasks.
-                More control); Unopinionated (more flexibility and freedom in
-                how you structure your application); Complementary - used in
-                conjunction with other libraries or frameworks to build
-                applications. Popular libraries: React.js, jQuery, Backbone.js;
+                Library: Call-based (collection of functions and utilities that
+                your code calls to perform specific tasks. More control);
+                Unopinionated (more flexibility and freedom in how you structure
+                your application); Complementary - used in conjunction with
+                other libraries or frameworks to build applications. Popular
+                libraries: React.js, jQuery, Backbone.js;
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -576,10 +598,15 @@ function Notes() {
           <Accordion.Item eventKey="5">
             <Accordion.Header>React state and props</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <h6>Props - used to pass data from a parent component to a child component.</h6>
-              <h6>State - used to store info that can change and affect the rendering of the component.
-                Unlike props, which are read-only and passed from parent to child components, state is local 
-                to the component and can be updated directly within the component.
+              <h6>
+                Props - used to pass data from a parent component to a child
+                component.
+              </h6>
+              <h6>
+                State - used to store info that can change and affect the
+                rendering of the component. Unlike props, which are read-only
+                and passed from parent to child components, state is local to
+                the component and can be updated directly within the component.
               </h6>
             </Accordion.Body>
           </Accordion.Item>
@@ -591,7 +618,30 @@ function Notes() {
             <Accordion.Header>
               Stateful vs Stateless components
             </Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <h6>Stateless components (functional components) - are simple functions that take props as input and return React elements. They do not manage their own state.</h6>
+              <h6>Stateful components - class components, manage their own state. They can hold and modify state using the this.state object and the setState method.
+                It can also be achieved in functional components using hooks.
+              </h6>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="8">
+            <Accordion.Header>Lifecycle methods</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Sequence that describes the methods that occur throughout the
+                "life" of the component. React components go through several lifecycle phases from creation to deletion
+                amd React provides lifecycle methods that allow developers to execute code at a specific point in a 
+                components lifecycle. Managed by using hooks. Traditionally associated with class components (componentDidMount, componentDidUpdate,
+                componentWillUnmount, shouldComponentUpdate, getDerivedStateFromProps, componentDidCatch) but after the introduction of hooks,
+                functional components can also handle lifecycle events.
+              </p>
+              <ul>
+                <li>useEffect can handle the class components: componentDidMount, componentDidUpdate, componentDidUnmount</li>
+                <li>useState and useReducer can manage state updated</li>
+                <li>useContext - context updates</li>
+              </ul>
+            </Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
