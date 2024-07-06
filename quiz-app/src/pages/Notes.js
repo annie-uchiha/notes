@@ -20,6 +20,9 @@ function Notes() {
         <li>
           <a href="#reactJS">React.js</a>
         </li>
+        <li>
+          <a href="#general">General</a>
+        </li>
       </ul>
       <div>
         <h2 className="notes__title" id="html5">
@@ -32,8 +35,6 @@ function Notes() {
               Hyper Text Markup Language. It defines the content and structure of web content. It is not a programming language.
             </Accordion.Body>
           </Accordion.Item>
-          </Accordion>
-          <Accordion>
           <Accordion.Item eventKey="1">
             <Accordion.Header>What are the semantic HTML elements?</Accordion.Header>
             <Accordion.Body className="left-section">
@@ -253,6 +254,19 @@ function Notes() {
           </Accordion.Item>
           </Accordion>
       </div>
+      
+        <h2 className="notes__title" id="general">
+          HTML5
+        </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Sync ans Async?</Accordion.Header>
+            <Accordion.Body className="left-section">
+              Sync programming - tasks are performed one ata  time in a sequential order, blocking further execution until the current task is completed.
+              Async programming - tasks are performed without blocking the main thread, allowing other tasks to run concurrently. It uses callbacks, promises and async/await.
+            </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
     </section>
   );
 }
