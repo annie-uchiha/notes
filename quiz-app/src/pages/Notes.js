@@ -166,6 +166,7 @@ function Notes() {
                   stores and organizes data for more complex manipulation
                 </li>
               </ul>
+              <h3>NB! Not to be mistaken for variable types: number, string, boolean, undefined, null, object, array, function.</h3>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
@@ -233,6 +234,31 @@ function Notes() {
               Classes are a way to create objects with specific properties and methods, providing a blueprint for creating multiple objects with similar characteristics.
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="9">
+            <Accordion.Header>Conditions</Accordion.Header>
+            <Accordion.Body className="right-section">
+              If a condition is met the code is executed.
+              <ul>
+                <li>if - if a statement is true, the code executes</li>
+                <li>if ... else - if a statement is true, the code executes - if not, it executes the code after the else condition</li>
+                <li>switch - when you have to check multiple conditions (more than 3 else statements); but always put a break to It
+                  otherwise it will keep giving results until infinity or until the terminal breaks; It provides
+                  more concise and readible way to write code.
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="9">
+            <Accordion.Header>Ways to increase values</Accordion.Header>
+            <Accordion.Body className="right-section">
+              let a=5;
+              a = a+6; or a+=6;
+              a++ or ++a
+              let a = 5;
+              console.log(++a + a++);
+              result:12
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
@@ -260,7 +286,7 @@ function Notes() {
               Opinionated (set of conventions and dictate how you should structure your code); Integrated (provide everything needed to build
               an application: routing, state management, data binding and more).
               Library: Call-based (collection of functions and utilities that your code calls to perform specific tasks. More control); 
-              Unopinionated (more flexibility and freedom in how you structure your application); Complementary - used in conjuction with other librariesor frameworks to build applications. 
+              Unopinionated (more flexibility and freedom in how you structure your application); Complementary - used in conjunction with other libraries or frameworks to build applications. 
             </Accordion.Body>
           </Accordion.Item>
           </Accordion>
