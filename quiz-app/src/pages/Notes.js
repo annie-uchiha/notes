@@ -74,7 +74,7 @@ function Notes() {
                 HTML element. It consists of: content, padding, borders and
                 margins.
               </p>
-              <img alt="box-model-img" src={boxModelImg}></img>
+              <img className="notes__img" alt="box-model-img" src={boxModelImg}></img>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
