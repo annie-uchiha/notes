@@ -226,6 +226,12 @@ function Notes() {
               </ul>
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="8">
+            <Accordion.Header>What are Classes?</Accordion.Header>
+            <Accordion.Body className="right-section">
+              Classes are a way to create objects with specific properties and methods, providing a blueprint for creating multiple objects with similar characteristics.
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
