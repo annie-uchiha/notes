@@ -232,6 +232,20 @@ function Notes() {
         <h2 className="notes__title" id="reactJS">
           React.js
         </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What is React.js?</Accordion.Header>
+            <Accordion.Body className="left-section">
+              JavaScript library.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>What is JSX?</Accordion.Header>
+            <Accordion.Body className="left-section">
+              JSX stands for JavaScript XML. It is a HTML-like syntax extension for JS used in React. 
+            </Accordion.Body>
+          </Accordion.Item>
+          </Accordion>
       </div>
     </section>
   );
