@@ -575,7 +575,13 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>React state and props</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <h6>Props - used to pass data from a parent component to a child component.</h6>
+              <h6>State - used to store info that can change and affect the rendering of the component.
+                Unlike props, which are read-only and passed from parent to child components, state is local 
+                to the component and can be updated directly within the component.
+              </h6>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Lists and conditional rendering</Accordion.Header>
