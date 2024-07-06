@@ -239,8 +239,8 @@ function Notes() {
             <Accordion.Body className="right-section">
               If a condition is met the code is executed.
               <ul>
-                <li>if - if a statement is true, the code executes</li>
-                <li>if ... else - if a statement is true, the code executes - if not, it executes the code after the else condition</li>
+                <li>if - if a statement is true, the code executes;</li>
+                <li>if ... else - if a statement is true, the code executes - if not, it executes the code after the else condition;</li>
                 <li>switch - when you have to check multiple conditions (more than 3 else statements); but always put a break to It
                   otherwise it will keep giving results until infinity or until the terminal breaks; It provides
                   more concise and readible way to write code.
@@ -257,6 +257,13 @@ function Notes() {
               let a = 5;
               console.log(++a + a++);
               result:12
+              Pre-increment (++variable): the value increases by 1 before the expression is evaluated; the updated value is used in the expression.
+              Post-increment (variable++): the value is used in the expression before it is increased by 1 - the incremention occurs after the expression is evaluated.
+              Both operators work only with numeric values.
+              Unexpected behavior if used within complex expressions.
+              Both modify the value of the variable which can lead to unexpected behavior if the same variable is ued multiple times within a single expression.
+              If used within parentheses(), they will be evaluated first. They have a higher precedence than most arithmetic operators: +,-,*,?.
+              Used only in simple straightforward expressions.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="11">
@@ -265,10 +272,23 @@ function Notes() {
               Executes block of code repeatedly as long as a specific condition is met.
               <ul>
                 <li>for - repeats a block of code a certain number of times;</li>
-                <li>while - repeats a block of ocde while a specific condition is true</li>
+                <li>while - repeats a block of ocde while a specific condition is true;</li>
                 <li>do ... while - similar to the while loop but it always executes the block of code at least once, even if the condition is false;
                 </li>
               </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="12">
+            <Accordion.Header>Closure</Accordion.Header>
+            <Accordion.Body className="right-section">
+              The ability of the inner function to remember the data (values) of their outer function.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="13">
+            <Accordion.Header>Objects</Accordion.Header>
+            <Accordion.Body className="right-section">
+              Data types used to store collections of data and functionality. They consist of key-value pairs where each key is a string (or symbol) and each value
+              can be any data type, including other objects.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
