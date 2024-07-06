@@ -70,6 +70,78 @@ function Notes() {
             Flexbox is a CSS layout that makes it easier to design flexible and responsive layout structures without using float or positioning. It allows you to align items vertically and horizontally with space distribution.
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>CSS selectors</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>Fonts, FontFace</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+            <Accordion.Header>BEM, Bootstrap</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+            <Accordion.Header>Creating forms</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="7">
+            <Accordion.Header>SVG</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="8">
+            <Accordion.Header>CSS animations</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="9">
+            <Accordion.Header>CSS GRID</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="10">
+            <Accordion.Header>Cross-browser compatibility</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="11">
+            <Accordion.Header>Adaptive and responsive design</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="12">
+            <Accordion.Header>Responsive graphics</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="13">
+            <Accordion.Header>Responsive navigation</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="14">
+            <Accordion.Header>SEO for developer</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
           </Accordion>
       </div>
       <div>
@@ -251,19 +323,22 @@ function Notes() {
           <Accordion.Item eventKey="10">
             <Accordion.Header>Ways to increase values</Accordion.Header>
             <Accordion.Body className="right-section">
-              let a=5;
-              <br>a = a+6; or a+=6;</br>
-              <br>a++ or ++a</br>
-              <br>let a = 5;</br>
-              <br>console.log(++a + a++);</br>
-              <br>result:12</br>
-              <br>Pre-increment (++variable): the value increases by 1 before the expression is evaluated; the updated value is used in the expression.
-              Post-increment (variable++): the value is used in the expression before it is increased by 1 - the incremention occurs after the expression is evaluated.
-              Both operators work only with numeric values.</br>
-              <br>Unexpected behavior if used within complex expressions.
-              Both modify the value of the variable which can lead to unexpected behavior if the same variable is ued multiple times within a single expression.
-              If used within parentheses(), they will be evaluated first. They have a higher precedence than most arithmetic operators: +,-,*,?.
-              Used only in simple straightforward expressions.</br>
+            <div>
+            let a = 5;<br />
+            a = a + 6; or a += 6;<br />
+            a++ or ++a<br />
+            let a = 5;<br />
+            console.log(++a + a++);<br />
+            result: 12<br />
+          </div>
+          <p>
+            Pre-increment (++variable): the value increases by 1 before the expression is evaluated; the updated value is used in the expression.<br />
+            Post-increment (variable++): the value is used in the expression before it is increased by 1 - the incrementation occurs after the expression is evaluated.<br />
+            Both operators work only with numeric values.<br />
+            Unexpected behavior if used within complex expressions.<br />
+            Both modify the value of the variable which can lead to unexpected behavior if the same variable is used multiple times within a single expression.<br />
+            If used within parentheses(), they will be evaluated first. They have a higher precedence than most arithmetic operators: +, -, *, ?. Used only in simple straightforward expressions.<br />
+          </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="11">
@@ -392,11 +467,41 @@ function Notes() {
               Unopinionated (more flexibility and freedom in how you structure your application); Complementary - used in conjunction with other libraries or frameworks to build applications. 
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>React hooks</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>React routing</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+            <Accordion.Header>React state and props</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+            <Accordion.Header>Lists and conditional rendering</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="7">
+            <Accordion.Header>Stateful vs Stateless components</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
           </Accordion>
       </div>
       
         <h2 className="notes__title" id="general">
-          General
+          Additional
         </h2>
         <Accordion>
           <Accordion.Item eventKey="0">
