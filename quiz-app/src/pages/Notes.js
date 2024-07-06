@@ -72,6 +72,7 @@ function Notes() {
                 HTML element. It consists of: content, padding, borders and
                 margins.
               </p>
+              <img alt="box-model-img" src="../components/box-model.png"></img>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -80,7 +81,6 @@ function Notes() {
             <Accordion.Header>What is flexbox?</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-                {" "}
                 Flexbox is a CSS layout that makes it easier to design flexible
                 and responsive layout structures without using float or
                 positioning. It allows you to align items vertically and
@@ -245,10 +245,10 @@ function Notes() {
                   </li>
                 </ul>
               </p>
-              <h3>
+              <h6>
                 NB! Not to be mistaken for variable types: number, string,
                 boolean, undefined, null, object, array, function.
-              </h3>
+              </h6>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
@@ -544,12 +544,15 @@ function Notes() {
                 flow); Opinionated (set of conventions and dictate how you
                 should structure your code); Integrated (provide everything
                 needed to build an application: routing, state management, data
-                binding and more). Library: Call-based (collection of functions
+                binding and more). Popular frameworks: Angular, Vue.js, Svelte, Ember;
+              </p>
+              <p>
+              Library: Call-based (collection of functions
                 and utilities that your code calls to perform specific tasks.
                 More control); Unopinionated (more flexibility and freedom in
                 how you structure your application); Complementary - used in
                 conjunction with other libraries or frameworks to build
-                applications.
+                applications. Popular libraries: React.js, jQuery, Backbone.js;
               </p>
             </Accordion.Body>
           </Accordion.Item>
