@@ -2,6 +2,8 @@ import React from "react";
 import "./Notes.scss";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
+import boxModelImg from '../components/box-model.png';
+
 
 function Notes() {
   return (
@@ -72,7 +74,7 @@ function Notes() {
                 HTML element. It consists of: content, padding, borders and
                 margins.
               </p>
-              <img alt="box-model-img" src="../components/box-model.png"></img>
+              <img alt="box-model-img" src={boxModelImg}></img>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
