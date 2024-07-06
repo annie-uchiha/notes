@@ -252,11 +252,22 @@ function Notes() {
               JSX stands for JavaScript XML. It is a HTML-like syntax extension for JS used in React. 
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>Difference between JS frameworks and libraries?</Accordion.Header>
+            <Accordion.Body className="left-section">
+              Framework: Inversion of control (the framework calls your code rather than the code calling the framework. 
+              Provides a structure and predefined way to build applications; it manages the control flow); 
+              Opinionated (set of conventions and dictate how you should structure your code); Integrated (provide everything needed to build
+              an application: routing, state management, data binding and more).
+              Library: Call-based (collection of functions and utilities that your code calls to perform specific tasks. More control); 
+              Unopinionated (more flexibility and freedom in how you structure your application); Complementary - used in conjuction with other librariesor frameworks to build applications. 
+            </Accordion.Body>
+          </Accordion.Item>
           </Accordion>
       </div>
       
         <h2 className="notes__title" id="general">
-          HTML5
+          General
         </h2>
         <Accordion>
           <Accordion.Item eventKey="0">
