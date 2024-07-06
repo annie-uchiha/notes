@@ -229,7 +229,7 @@ function Notes() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
-            <Accordion.Header>What are Classes?</Accordion.Header>
+            <Accordion.Header>Classes</Accordion.Header>
             <Accordion.Body className="right-section">
               Classes are a way to create objects with specific properties and methods, providing a blueprint for creating multiple objects with similar characteristics.
             </Accordion.Body>
@@ -252,18 +252,18 @@ function Notes() {
             <Accordion.Header>Ways to increase values</Accordion.Header>
             <Accordion.Body className="right-section">
               let a=5;
-              a = a+6; or a+=6;
-              a++ or ++a
-              let a = 5;
-              console.log(++a + a++);
-              result:12
-              Pre-increment (++variable): the value increases by 1 before the expression is evaluated; the updated value is used in the expression.
+              <br>a = a+6; or a+=6;</br>
+              <br>a++ or ++a</br>
+              <br>let a = 5;</br>
+              <br>console.log(++a + a++);</br>
+              <br>result:12</br>
+              <br>Pre-increment (++variable): the value increases by 1 before the expression is evaluated; the updated value is used in the expression.
               Post-increment (variable++): the value is used in the expression before it is increased by 1 - the incremention occurs after the expression is evaluated.
-              Both operators work only with numeric values.
-              Unexpected behavior if used within complex expressions.
+              Both operators work only with numeric values.</br>
+              <br>Unexpected behavior if used within complex expressions.
               Both modify the value of the variable which can lead to unexpected behavior if the same variable is ued multiple times within a single expression.
               If used within parentheses(), they will be evaluated first. They have a higher precedence than most arithmetic operators: +,-,*,?.
-              Used only in simple straightforward expressions.
+              Used only in simple straightforward expressions.</br>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="11">
@@ -272,7 +272,7 @@ function Notes() {
               Executes block of code repeatedly as long as a specific condition is met.
               <ul>
                 <li>for - repeats a block of code a certain number of times;</li>
-                <li>while - repeats a block of ocde while a specific condition is true;</li>
+                <li>while - repeats a block of code while a specific condition is true;</li>
                 <li>do ... while - similar to the while loop but it always executes the block of code at least once, even if the condition is false;
                 </li>
               </ul>
@@ -289,6 +289,77 @@ function Notes() {
             <Accordion.Body className="right-section">
               Data types used to store collections of data and functionality. They consist of key-value pairs where each key is a string (or symbol) and each value
               can be any data type, including other objects.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="14">
+            <Accordion.Header>Primitive vs Reference values</Accordion.Header>
+            <Accordion.Body className="right-section">
+              Primitive types: strings, numbers, booleans, undefined, null, symbol, bigInt.
+              Reference values: objects, arrays, functions.
+              Objects, arrays and functions are reference values because they don't store data directly, instead they store reference to the memory
+              location where data is stored.
+              <ul>
+                <li>Objects: when you assign an object to a variable, what you are storing in that variable is a reference to the memory location where the object is stored.
+                  So if you assign the same object to multiple variables or pass it as an argument to a function, you're working with the same underlying object.
+                </li>
+                <li>Arrays: also objects, similar behavior. When assign an array to a variable, you are storing a reference to the memory location where the array
+                  is stored. Like objects, if you assign the same array to multiple variables or pass it as an argument to a function - you're working
+                  with the same underlying array.
+                </li>
+                <li>Functions: when you define a function you create an object of type function so the same applies.</li>
+              </ul>
+              <h3>Operations that modify objects, arrays and functions affect the underlying data directly. 
+                Analogy: ID's in the HTML - changes made to one elements' styling or attribute using its ID will affect all elements with the same ID, just as changes made
+                to an object, array or function using one reference will affect all references to that object, array or function.
+              </h3>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="14">
+            <Accordion.Header>Arrays</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="15">
+            <Accordion.Header>DOM</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="16">
+            <Accordion.Header>Events</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="17">
+            <Accordion.Header>jQuery</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="18">
+            <Accordion.Header>AJAX</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="19">
+            <Accordion.Header>Work with API</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="20">
+            <Accordion.Header>Web storage</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="21">
+            <Accordion.Header>Gulp</Accordion.Header>
+            <Accordion.Body className="right-section">
+              
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
