@@ -31,7 +31,7 @@ function Notes() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>What is HTML?</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>
                 Hyper Text Markup Language. It defines the content and structure
                 of web content. It is not a programming language.
@@ -42,7 +42,7 @@ function Notes() {
             <Accordion.Header>
               What are the semantic HTML elements?
             </Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>
                 They clearly describe their meaning in a human and machine
                 readable way: header, footer, article, section, nav.
@@ -58,7 +58,7 @@ function Notes() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>What is CSS?</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>Cascading Style Sheets. Not a programming language</p>
             </Accordion.Body>
           </Accordion.Item>
@@ -66,7 +66,7 @@ function Notes() {
         <Accordion>
           <Accordion.Item eventKey="1">
             <Accordion.Header>What is box model?</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>
                 The CSS box model is essentially a box that wraps around every
                 HTML element. It consists of: content, padding, borders and
@@ -78,7 +78,7 @@ function Notes() {
         <Accordion>
           <Accordion.Item eventKey="2">
             <Accordion.Header>What is flexbox?</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>
                 {" "}
                 Flexbox is a CSS layout that makes it easier to design flexible
@@ -90,51 +90,51 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>CSS selectors</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>Fonts, FontFace</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>BEM, Bootstrap</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Creating forms</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
             <Accordion.Header>SVG</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>CSS animations</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
             <Accordion.Header>CSS GRID</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="10">
             <Accordion.Header>Cross-browser compatibility</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="11">
             <Accordion.Header>Adaptive and responsive design</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="12">
             <Accordion.Header>Responsive graphics</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="13">
             <Accordion.Header>Responsive navigation</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
             <Accordion.Header>SEO for developer</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
@@ -145,7 +145,7 @@ function Notes() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>What is JavaScript?</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>
                 Weakly typed programming language used for Front-end development
                 to create interactive and dynamic web applications.
@@ -154,7 +154,7 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>What does weakly typed mean?</Accordion.Header>
-            <Accordion.Body className="right-section">
+            <Accordion.Body className="notes__section">
               <p>
                 It is a type of system where variables are not bound to a
                 specific data type. They can be dynamically assigned different
@@ -165,7 +165,7 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>Variables</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <div>
                 They hold various types of data, such as numbers, strings,
                 booleans, arrays, objects or even functions. They allow
@@ -191,7 +191,7 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>What does hoisting mean?</Accordion.Header>
-            <Accordion.Body className="right-section">
+            <Accordion.Body className="notes__section">
               <p>
                 JS behavior where variables and functions can be declared on the
                 top of their containing scope during compilation phase, before
@@ -202,7 +202,7 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>What are the main data types?</Accordion.Header>
-            <Accordion.Body className="left-section">
+            <Accordion.Body className="notes__section">
               <p>
                 The main difference between a primitive data type and the
                 complex data type lies in how they are stored and manipulated.
@@ -255,7 +255,7 @@ function Notes() {
             <Accordion.Header>
               Difference between NaN, null and undefined
             </Accordion.Header>
-            <Accordion.Body className="right-section">
+            <Accordion.Body className="notes__section">
               <ul>
                 <li>
                   NaN - Not a Number; it is returned after a math operation
@@ -275,76 +275,86 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Operators</Accordion.Header>
-            <Accordion.Body className="left-section">
-              <ul>
-                <li>
-                  Math operators: +, -, *, /, %, **; == (checks for equality);
-                  === (compares value and type); !== (strict inequality,
-                  evaluates to true if the operands are not equal and/or not of
-                  the same type); != (inequality operator; true if the operands
-                  are not equal, regardless of their type); etc.
-                </li>
-                <li>
-                  Logical operators: && (AND both requirements need to be met);
-                  OR (one of the requirements need to be met); !A (NOT - gives
-                  the opposite value);
-                </li>
-              </ul>
+            <Accordion.Body className="notes__section">
+              <div>
+                <ul>
+                  <li>
+                    Math operators: +, -, *, /, %, **; == (checks for equality);
+                    === (compares value and type); !== (strict inequality,
+                    evaluates to true if the operands are not equal and/or not
+                    of the same type); != (inequality operator; true if the
+                    operands are not equal, regardless of their type); etc.
+                  </li>
+                  <li>
+                    Logical operators: && (AND both requirements need to be
+                    met); OR (one of the requirements need to be met); !A (NOT -
+                    gives the opposite value);
+                  </li>
+                </ul>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
             <Accordion.Header>Type Conversions</Accordion.Header>
-            <Accordion.Body className="right-section">
-              <ul>
-                <li>parseInt() - parse a string and convert it to integer;</li>
-                <li>
-                  parseFloat() - parse a string and convert it to floating-point
-                  number;
-                </li>
-                <li>
-                  toString() - convert a value to its string representation;
-                </li>
-                <li>
-                  toFixed() - format a number with a specified number of digits
-                  after the decimal point and return the resulting string
-                  representation;
-                </li>
-                <li>Number() - a value to a number</li>
-                <li>String() - a value to a string</li>
-              </ul>
+            <Accordion.Body className="notes__section">
+              <div>
+                <ul>
+                  <li>
+                    parseInt() - parse a string and convert it to integer;
+                  </li>
+                  <li>
+                    parseFloat() - parse a string and convert it to
+                    floating-point number;
+                  </li>
+                  <li>
+                    toString() - convert a value to its string representation;
+                  </li>
+                  <li>
+                    toFixed() - format a number with a specified number of
+                    digits after the decimal point and return the resulting
+                    string representation;
+                  </li>
+                  <li>Number() - a value to a number</li>
+                  <li>String() - a value to a string</li>
+                </ul>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>Classes</Accordion.Header>
-            <Accordion.Body className="right-section">
-              Classes are a way to create objects with specific properties and
-              methods, providing a blueprint for creating multiple objects with
-              similar characteristics.
+            <Accordion.Body className="notes__section">
+              <p>
+                Classes are a way to create objects with specific properties and
+                methods, providing a blueprint for creating multiple objects
+                with similar characteristics.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
             <Accordion.Header>Conditions</Accordion.Header>
-            <Accordion.Body className="right-section">
-              <div>If a condition is met the code is executed.
-              <ul>
-                <li>if - if a statement is true, the code executes;</li>
-                <li>
-                  if ... else - if a statement is true, the code executes - if
-                  not, it executes the code after the else condition;
-                </li>
-                <li>
-                  switch - when you have to check multiple conditions (more than
-                  3 else statements); but always put a break to It otherwise it
-                  will keep giving results until infinity or until the terminal
-                  breaks; It provides more concise and readible way to write
-                  code.
-                </li>
-              </ul></div>              
+            <Accordion.Body className="notes__section">
+              <div>
+                If a condition is met the code is executed.
+                <ul>
+                  <li>if - if a statement is true, the code executes;</li>
+                  <li>
+                    if ... else - if a statement is true, the code executes - if
+                    not, it executes the code after the else condition;
+                  </li>
+                  <li>
+                    switch - when you have to check multiple conditions (more
+                    than 3 else statements); but always put a break to It
+                    otherwise it will keep giving results until infinity or
+                    until the terminal breaks; It provides more concise and
+                    readible way to write code.
+                  </li>
+                </ul>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="10">
             <Accordion.Header>Ways to increase values</Accordion.Header>
-            <Accordion.Body className="right-section">
+            <Accordion.Body className="notes__section">
               <div>
                 let a = 5;
                 <br />
@@ -385,111 +395,120 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="11">
             <Accordion.Header>Loops</Accordion.Header>
-            <Accordion.Body className="right-section">
-              <div>Executes block of code repeatedly as long as a specific condition
-              is met.
-              <ul>
-                <li>
-                  for - repeats a block of code a certain number of times;
-                </li>
-                <li>
-                  while - repeats a block of code while a specific condition is
-                  true;
-                </li>
-                <li>
-                  do ... while - similar to the while loop but it always
-                  executes the block of code at least once, even if the
-                  condition is false;
-                </li>
-              </ul></div>              
+            <Accordion.Body className="notes__section">
+              <div>
+                Executes block of code repeatedly as long as a specific
+                condition is met.
+                <ul>
+                  <li>
+                    for - repeats a block of code a certain number of times;
+                  </li>
+                  <li>
+                    while - repeats a block of code while a specific condition
+                    is true;
+                  </li>
+                  <li>
+                    do ... while - similar to the while loop but it always
+                    executes the block of code at least once, even if the
+                    condition is false;
+                  </li>
+                </ul>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="12">
             <Accordion.Header>Closure</Accordion.Header>
-            <Accordion.Body className="right-section">
-              <p>The ability of the inner function to remember the data (values) of
-              their outer function.</p>              
+            <Accordion.Body className="notes__section">
+              <p>
+                The ability of the inner function to remember the data (values)
+                of their outer function.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="13">
             <Accordion.Header>Objects</Accordion.Header>
-            <Accordion.Body className="right-section">
-              <p>Data types used to store collections of data and functionality.
-              They consist of key-value pairs where each key is a string (or
-              symbol) and each value can be any data type, including other
-              objects.</p>              
+            <Accordion.Body className="notes__section">
+              <p>
+                Data types used to store collections of data and functionality.
+                They consist of key-value pairs where each key is a string (or
+                symbol) and each value can be any data type, including other
+                objects.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
             <Accordion.Header>Primitive vs Reference values</Accordion.Header>
-            <Accordion.Body className="right-section">
-              <div>Primitive types: strings, numbers, booleans, undefined, null,
-              symbol, bigInt. Reference values: objects, arrays, functions.
-              Objects, arrays and functions are reference values because they
-              don't store data directly, instead they store reference to the
-              memory location where data is stored.
-              <ul>
-                <li>
-                  Objects: when you assign an object to a variable, what you are
-                  storing in that variable is a reference to the memory location
-                  where the object is stored. So if you assign the same object
-                  to multiple variables or pass it as an argument to a function,
-                  you're working with the same underlying object.
-                </li>
-                <li>
-                  Arrays: also objects, similar behavior. When assign an array
-                  to a variable, you are storing a reference to the memory
-                  location where the array is stored. Like objects, if you
-                  assign the same array to multiple variables or pass it as an
-                  argument to a function - you're working with the same
-                  underlying array.
-                </li>
-                <li>
-                  Functions: when you define a function you create an object of
-                  type function so the same applies.
-                </li>
-              </ul></div>              
-              <h3>
-                Operations that modify objects, arrays and functions affect the
-                underlying data directly. Analogy: ID's in the HTML - changes
-                made to one elements' styling or attribute using its ID will
-                affect all elements with the same ID, just as changes made to an
-                object, array or function using one reference will affect all
-                references to that object, array or function.
-              </h3>
+            <Accordion.Body className="notes__section">
+              <div>
+                Primitive types: strings, numbers, booleans, undefined, null,
+                symbol, bigInt. Reference values: objects, arrays, functions.
+                Objects, arrays and functions are reference values because they
+                don't store data directly, instead they store reference to the
+                memory location where data is stored.
+                <ul>
+                  <li>
+                    Objects: when you assign an object to a variable, what you
+                    are storing in that variable is a reference to the memory
+                    location where the object is stored. So if you assign the
+                    same object to multiple variables or pass it as an argument
+                    to a function, you're working with the same underlying
+                    object.
+                  </li>
+                  <li>
+                    Arrays: also objects, similar behavior. When assign an array
+                    to a variable, you are storing a reference to the memory
+                    location where the array is stored. Like objects, if you
+                    assign the same array to multiple variables or pass it as an
+                    argument to a function - you're working with the same
+                    underlying array.
+                  </li>
+                  <li>
+                    Functions: when you define a function you create an object
+                    of type function so the same applies.
+                  </li>
+                </ul>
+                <h3>
+                  Operations that modify objects, arrays and functions affect
+                  the underlying data directly. Analogy: ID's in the HTML -
+                  changes made to one elements' styling or attribute using its
+                  ID will affect all elements with the same ID, just as changes
+                  made to an object, array or function using one reference will
+                  affect all references to that object, array or function.
+                </h3>
+              </div>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
             <Accordion.Header>Arrays</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="15">
             <Accordion.Header>DOM</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="16">
             <Accordion.Header>Events</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="17">
             <Accordion.Header>jQuery</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="18">
             <Accordion.Header>AJAX</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="19">
             <Accordion.Header>Work with API</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="20">
             <Accordion.Header>Web storage</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="21">
             <Accordion.Header>Gulp</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
@@ -500,57 +519,61 @@ function Notes() {
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>What is React.js?</Accordion.Header>
-            <Accordion.Body className="left-section">
-              <p>JavaScript library.</p>              
+            <Accordion.Body className="notes__section">
+              <p>JavaScript library.</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>What is JSX?</Accordion.Header>
-            <Accordion.Body className="left-section">
-              <p>JSX stands for JavaScript XML. It is a HTML-like syntax extension
-              for JS used in React.</p>              
+            <Accordion.Body className="notes__section">
+              <p>
+                JSX stands for JavaScript XML. It is a HTML-like syntax
+                extension for JS used in React.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
               Difference between JS frameworks and libraries?
             </Accordion.Header>
-            <Accordion.Body className="left-section">
-              <p>Framework: Inversion of control (the framework calls your code
-              rather than the code calling the framework. Provides a structure
-              and predefined way to build applications; it manages the control
-              flow); Opinionated (set of conventions and dictate how you should
-              structure your code); Integrated (provide everything needed to
-              build an application: routing, state management, data binding and
-              more).
-              <br> Library: Call-based (collection of functions and utilities
-              that your code calls to perform specific tasks. More control);
-              Unopinionated (more flexibility and freedom in how you structure
-              your application); Complementary - used in conjunction with other
-              libraries or frameworks to build applications.</p>              
+            <Accordion.Body className="notes__section">
+              <p>
+                Framework: Inversion of control (the framework calls your code
+                rather than the code calling the framework. Provides a structure
+                and predefined way to build applications; it manages the control
+                flow); Opinionated (set of conventions and dictate how you
+                should structure your code); Integrated (provide everything
+                needed to build an application: routing, state management, data
+                binding and more). Library: Call-based (collection of functions
+                and utilities that your code calls to perform specific tasks.
+                More control); Unopinionated (more flexibility and freedom in
+                how you structure your application); Complementary - used in
+                conjunction with other libraries or frameworks to build
+                applications.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>React hooks</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>React routing</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>React state and props</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Lists and conditional rendering</Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
             <Accordion.Header>
               Stateful vs Stateless components
             </Accordion.Header>
-            <Accordion.Body className="right-section"></Accordion.Body>
+            <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
@@ -561,12 +584,14 @@ function Notes() {
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Sync and Async?</Accordion.Header>
-          <Accordion.Body className="left-section">
-            <p>Sync programming - tasks are performed one ata time in a sequential
-            order, blocking further execution until the current task is
-            completed. Async programming - tasks are performed without blocking
-            the main thread, allowing other tasks to run concurrently. It uses
-            callbacks, promises and async/await.</p>
+          <Accordion.Body className="notes__section">
+            <p>
+              Sync programming - tasks are performed one ata time in a
+              sequential order, blocking further execution until the current
+              task is completed. Async programming - tasks are performed without
+              blocking the main thread, allowing other tasks to run
+              concurrently. It uses callbacks, promises and async/await.
+            </p>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
