@@ -22,7 +22,7 @@ function Notes() {
           <a href="#reactJS">React.js</a>
         </li>
         <li>
-          <a href="#general">General</a>
+          <a href="#general">Additional</a>
         </li>
       </ul>
       <div>
@@ -497,14 +497,14 @@ function Notes() {
                     of type function so the same applies.
                   </li>
                 </ul>
-                <h3>
+                <h6>
                   Operations that modify objects, arrays and functions affect
                   the underlying data directly. Analogy: ID's in the HTML -
                   changes made to one elements' styling or attribute using its
                   ID will affect all elements with the same ID, just as changes
                   made to an object, array or function using one reference will
                   affect all references to that object, array or function.
-                </h3>
+                </h6>
               </div>
             </Accordion.Body>
           </Accordion.Item>
