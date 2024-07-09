@@ -508,7 +508,7 @@ function Notes() {
               </div>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="14">
+          <Accordion.Item eventKey="15">
             <Accordion.Header>Arrays</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>Store collections of data (data lists). They can hold multiple values,
@@ -542,10 +542,7 @@ function Notes() {
               <h6>* spread operator - allows an iterable (array, string) to be expanded into individual elements. Can be used to make copies of arrays, concatenate arrays, pass function arguments, etc.</h6>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="15">
-            <Accordion.Header>DOM</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
-          </Accordion.Item>
+          
           <Accordion.Item eventKey="16">
             <Accordion.Header>Events</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
