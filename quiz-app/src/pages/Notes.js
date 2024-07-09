@@ -510,7 +510,33 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="14">
             <Accordion.Header>Arrays</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>Store collections of data (data lists). They can hold multiple values,
+                including other arrays and objects. Each element in array has a numeric starting from 0.
+              </p>
+              <h6>Built-in array methods:</h6>
+              <ul>
+                <h6>Methods that do not change the original array:</h6>
+                <li>at: access an element at a specific index in an array, if the index is out of bounds = undefined;</li>
+                <li>map: creates a new array from the results of a called function;</li>
+                <li>filter: creates a new array with all elements that pass the test implemented by the provided function;</li>
+                <li>slice: returns a copy of a portion of an array into a new array object selected from start to end (end not included);</li>
+                <li>concat: combines tow or more arrays and returns a new array without modifying the existing one;</li>
+                <li>findIndex: returns the index of the first element that satisfied the provided testing function, otherwise it returns -1;</li>
+                <li>indexOf: returns the first index at which an element can be found, or -1 if it is not present;</li>
+                <li>join: joins all elements of an array into a string;</li>
+                <h6>Built-in array methods that change the original array:</h6>
+                <li>push: adds one more element to the end of an array and returns the new length of the array;</li>
+                <li>pop: removes the last element of the array and returns the elements;</li>
+                <li>unshift: adds element to the begining and returns the new length;</li>
+                <li>shift: removes the first element of an array and returns the removed element and updated the indices of the remaining elements;</li>
+               <li>splice: adds or removes elements from an array at a specified index and returns the removed elements as a new array;</li>
+               <li>sort: sorts the elements and returns the sordet array;</li>
+               <li>fill: change all elements to the static value, from start index(0) to an end one, returns the modified array;</li>
+               <li>reverse: reverse the order of the array;</li>
+               <li>includes: determines if an array includes an element, returns true or false;</li>
+              </ul>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="15">
             <Accordion.Header>DOM</Accordion.Header>
