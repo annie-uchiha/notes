@@ -536,6 +536,10 @@ function Notes() {
                <li>reverse: reverse the order of the array;</li>
                <li>includes: determines if an array includes an element, returns true or false;</li>
               </ul>
+              <h6>Loop through arrays: for; for ... if; forEach;</h6>
+              <h6>* forEach - executes a provided function once for each array element;</h6>
+              <h6>Create new array: spread operator; concat; splice;</h6>
+              <h6>* spread operator - allows an iterable (array, string) to be expanded into individual elements. Can be used to make copies of arrays, concatenate arrays, pass function arguments, etc.</h6>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="15">
