@@ -542,28 +542,31 @@ function Notes() {
               <h6>* spread operator - allows an iterable (array, string) to be expanded into individual elements. Can be used to make copies of arrays, concatenate arrays, pass function arguments, etc.</h6>
             </Accordion.Body>
           </Accordion.Item>
-          
           <Accordion.Item eventKey="16">
             <Accordion.Header>Events</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="17">
-            <Accordion.Header>jQuery</Accordion.Header>
+            <Accordion.Header>DOM</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="18">
-            <Accordion.Header>AJAX</Accordion.Header>
+            <Accordion.Header>jQuery</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="19">
-            <Accordion.Header>Work with API</Accordion.Header>
+            <Accordion.Header>AJAX</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="20">
-            <Accordion.Header>Web storage</Accordion.Header>
+            <Accordion.Header>Work with API</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="21">
+            <Accordion.Header>Web storage</Accordion.Header>
+            <Accordion.Body className="notes__section"></Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="22">
             <Accordion.Header>Gulp</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
