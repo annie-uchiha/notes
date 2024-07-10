@@ -511,35 +511,88 @@ function Notes() {
           <Accordion.Item eventKey="15">
             <Accordion.Header>Arrays</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <p>Store collections of data (data lists). They can hold multiple values,
-                including other arrays and objects. Each element in array has a numeric starting from 0.
+              <p>
+                Store collections of data (data lists). They can hold multiple
+                values, including other arrays and objects. Each element in
+                array has a numeric starting from 0.
               </p>
               <h6>Built-in array methods:</h6>
               <ul>
                 <h6>Methods that do not change the original array:</h6>
-                <li>at: access an element at a specific index in an array, if the index is out of bounds = undefined;</li>
-                <li>map: creates a new array from the results of a called function;</li>
-                <li>filter: creates a new array with all elements that pass the test implemented by the provided function;</li>
-                <li>slice: returns a copy of a portion of an array into a new array object selected from start to end (end not included);</li>
-                <li>concat: combines tow or more arrays and returns a new array without modifying the existing one;</li>
-                <li>findIndex: returns the index of the first element that satisfied the provided testing function, otherwise it returns -1;</li>
-                <li>indexOf: returns the first index at which an element can be found, or -1 if it is not present;</li>
+                <li>
+                  at: access an element at a specific index in an array, if the
+                  index is out of bounds = undefined;
+                </li>
+                <li>
+                  map: creates a new array from the results of a called
+                  function;
+                </li>
+                <li>
+                  filter: creates a new array with all elements that pass the
+                  test implemented by the provided function;
+                </li>
+                <li>
+                  slice: returns a copy of a portion of an array into a new
+                  array object selected from start to end (end not included);
+                </li>
+                <li>
+                  concat: combines tow or more arrays and returns a new array
+                  without modifying the existing one;
+                </li>
+                <li>
+                  findIndex: returns the index of the first element that
+                  satisfied the provided testing function, otherwise it returns
+                  -1;
+                </li>
+                <li>
+                  indexOf: returns the first index at which an element can be
+                  found, or -1 if it is not present;
+                </li>
                 <li>join: joins all elements of an array into a string;</li>
                 <h6>Built-in array methods that change the original array:</h6>
-                <li>push: adds one more element to the end of an array and returns the new length of the array;</li>
-                <li>pop: removes the last element of the array and returns the elements;</li>
-                <li>unshift: adds element to the begining and returns the new length;</li>
-                <li>shift: removes the first element of an array and returns the removed element and updated the indices of the remaining elements;</li>
-               <li>splice: adds or removes elements from an array at a specified index and returns the removed elements as a new array;</li>
-               <li>sort: sorts the elements and returns the sordet array;</li>
-               <li>fill: change all elements to the static value, from start index(0) to an end one, returns the modified array;</li>
-               <li>reverse: reverse the order of the array;</li>
-               <li>includes: determines if an array includes an element, returns true or false;</li>
+                <li>
+                  push: adds one more element to the end of an array and returns
+                  the new length of the array;
+                </li>
+                <li>
+                  pop: removes the last element of the array and returns the
+                  elements;
+                </li>
+                <li>
+                  unshift: adds element to the begining and returns the new
+                  length;
+                </li>
+                <li>
+                  shift: removes the first element of an array and returns the
+                  removed element and updated the indices of the remaining
+                  elements;
+                </li>
+                <li>
+                  splice: adds or removes elements from an array at a specified
+                  index and returns the removed elements as a new array;
+                </li>
+                <li>sort: sorts the elements and returns the sordet array;</li>
+                <li>
+                  fill: change all elements to the static value, from start
+                  index(0) to an end one, returns the modified array;
+                </li>
+                <li>reverse: reverse the order of the array;</li>
+                <li>
+                  includes: determines if an array includes an element, returns
+                  true or false;
+                </li>
               </ul>
               <h6>Loop through arrays: for; for ... if; forEach;</h6>
-              <h6>* forEach - executes a provided function once for each array element;</h6>
+              <h6>
+                * forEach - executes a provided function once for each array
+                element;
+              </h6>
               <h6>Create new array: spread operator; concat; splice;</h6>
-              <h6>* spread operator - allows an iterable (array, string) to be expanded into individual elements. Can be used to make copies of arrays, concatenate arrays, pass function arguments, etc.</h6>
+              <h6>
+                * spread operator - allows an iterable (array, string) to be
+                expanded into individual elements. Can be used to make copies of
+                arrays, concatenate arrays, pass function arguments, etc.
+              </h6>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="16">
@@ -568,7 +621,36 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="22">
             <Accordion.Header>Gulp</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <h6>Open source JS toolkit (JS task runner).</h6>
+              <h6>
+                * task runner: post rocessor; makes the code tidier and gets it
+                ready for deployment (compiling the code, minifying files,
+                running tests, linting, deploying applications.); Task runners
+                help improve efficiency, reduce errors and ensure consistency
+                across development environments.
+              </h6>
+              <p>
+                Gulp uses code-centric approach, allowing developers to define
+                tasks using JS. This makes it more flexible an easier to read an
+                maintain.
+              </p>
+              <p>
+                Streaming: Gulp uses Node.js streams, which allows for efficient
+                handling of files. This streaming mechanism enables Gulp to pipe
+                data through multiple tasks without creating temporary files
+                leading to faster build process.
+              </p>
+              <p>
+                Plugins: for variety of tasks (file minification, compilation,
+                concatination, etc.). Designed to do one thing well and they can
+                be composed to build complex workflows.
+              </p>
+              <p>
+                Simple and easy to use API, consisting of four methods: src,
+                dest, task, watch.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
@@ -649,9 +731,16 @@ function Notes() {
               Stateful vs Stateless components
             </Accordion.Header>
             <Accordion.Body className="notes__section">
-              <h6>Stateless components (functional components) - are simple functions that take props as input and return React elements. They do not manage their own state.</h6>
-              <h6>Stateful components - class components, manage their own state. They can hold and modify state using the this.state object and the setState method.
-                It can also be achieved in functional components using hooks.
+              <h6>
+                Stateless components (functional components) - are simple
+                functions that take props as input and return React elements.
+                They do not manage their own state.
+              </h6>
+              <h6>
+                Stateful components - class components, manage their own state.
+                They can hold and modify state using the this.state object and
+                the setState method. It can also be achieved in functional
+                components using hooks.
               </h6>
             </Accordion.Body>
           </Accordion.Item>
@@ -660,14 +749,21 @@ function Notes() {
             <Accordion.Body className="notes__section">
               <p>
                 Sequence that describes the methods that occur throughout the
-                "life" of the component. React components go through several lifecycle phases from creation to deletion
-                amd React provides lifecycle methods that allow developers to execute code at a specific point in a 
-                components lifecycle. Managed by using hooks. Traditionally associated with class components (componentDidMount, componentDidUpdate,
-                componentWillUnmount, shouldComponentUpdate, getDerivedStateFromProps, componentDidCatch) but after the introduction of hooks,
+                "life" of the component. React components go through several
+                lifecycle phases from creation to deletion amd React provides
+                lifecycle methods that allow developers to execute code at a
+                specific point in a components lifecycle. Managed by using
+                hooks. Traditionally associated with class components
+                (componentDidMount, componentDidUpdate, componentWillUnmount,
+                shouldComponentUpdate, getDerivedStateFromProps,
+                componentDidCatch) but after the introduction of hooks,
                 functional components can also handle lifecycle events.
               </p>
               <ul>
-                <li>useEffect can handle the class components: componentDidMount, componentDidUpdate, componentDidUnmount</li>
+                <li>
+                  useEffect can handle the class components: componentDidMount,
+                  componentDidUpdate, componentDidUnmount
+                </li>
                 <li>useState and useReducer can manage state updated</li>
                 <li>useContext - context updates</li>
               </ul>
