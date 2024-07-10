@@ -755,7 +755,12 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>React routing</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <h6>React Router is a library used to handle routing in React applications. It enables navigation
+                among different components and allows the app to be single-page application, meaning it dynamically updated the content without reloading the page.
+              </h6>
+              <p></p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>React state and props</Accordion.Header>
