@@ -656,19 +656,37 @@ function Notes() {
             <Accordion.Header>Webpack</Accordion.Header>
             <Accordion.Body className="notes__section">
               <h6>Module bundler for JS applications.</h6>
-              
+
               <p>
-                Module bundling: bundles various modules (JS, CSS, images, etc.) into single or multiple output files, reducing the number of HTTP requests 
-                needed and improving load times.
+                Module bundling: bundles various modules (JS, CSS, images, etc.)
+                into single or multiple output files, reducing the number of
+                HTTP requests needed and improving load times.
               </p>
               <p>
-                Code splitting: splits the code into multiple bundles that can be loaded on demand, improving the initial load time and performance of web applications. 
+                Code splitting: splits the code into multiple bundles that can
+                be loaded on demand, improving the initial load time and
+                performance of web applications.
               </p>
               <p>
-                Loaders: transformations applied to the source files of your modules. They allow to preprocess files as they are loaded, such as transpiling ES6+ to ES5 using Babel, compiling SASS to CSS, or loading images and fonts.
+                Loaders: transformations applied to the source files of your
+                modules. They allow to preprocess files as they are loaded, such
+                as transpiling ES6+ to ES5 using Babel, compiling SASS to CSS,
+                or loading images and fonts.
               </p>
-              <p>Plugins: for optimizing bundles, managing environment variables and injecting environment-specific code.</p>
-              <p>The Webpack Dev Server: provides live reloading, making it easy to see changes in real-time as you develop.</p>
+              <p>
+                Plugins: for optimizing bundles, managing environment variables
+                and injecting environment-specific code.
+              </p>
+              <p>
+                The Webpack Dev Server: provides live reloading, making it easy
+                to see changes in real-time as you develop.
+              </p>
+              <p>
+                While Gulp is a task runner focusing on automating repetitive
+                tasks through code, Webpack is primarily a module bundler
+                designed to manage and optimize dependencies and assets. They
+                handle the same tasks with a different approach.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
