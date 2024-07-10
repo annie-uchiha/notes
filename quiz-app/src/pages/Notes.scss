@@ -2,22 +2,21 @@
   padding: 2% 20%;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .notes__title {
   text-decoration: underline;
   margin-top: 30px;
+  text-align: center;
 }
 
-.notes__anchors {
+.notes__anchors li {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
   color: whitesmoke;
-  li {
-    text-decoration: none;
-  }
 }
 
 .notes__section {

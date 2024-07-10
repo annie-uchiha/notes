@@ -7,7 +7,7 @@ import boxModelImg from "../components/box-model.png";
 function Notes() {
   return (
     <section className="notes">
-      <h1>Notes Page</h1>
+      <h1 className="notes__anchors">Notes Page</h1>
       <ul className="notes__anchors">
         <li>
           <a href="#html5">HTML5</a>
