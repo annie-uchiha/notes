@@ -785,11 +785,11 @@ function Notes() {
             <Accordion.Header>Lists and conditional rendering</Accordion.Header>
             <Accordion.Body className="notes__section">
               <ul>
-                <li>if...else</li>
-                <li>ternary conditional operator - useful for rendering one of two elements based on a condition</li>
-                <li>logical operators - && (AND) is used instead of if, which is not supported in JSX</li>
-                <li>map - create and display a list of similar objects/components. It is standard JS function that can be called on arrays.</li>
-                <li>switch - if there are more than 3 conditions to be checked</li>
+                <li>if...else;</li>
+                <li>ternary conditional operator - useful for rendering one of two elements based on a condition;</li>
+                <li>logical operators - && (AND) is used instead of if, which is not supported in JSX; || (OR), instead of else, which is not supported in JSX;</li>
+                <li>map - create and display a list of similar objects/components. It is standard JS function that can be called on arrays;</li>
+                <li>switch - if there are more than 3 conditions to be checked;</li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
