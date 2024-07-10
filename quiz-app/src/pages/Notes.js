@@ -751,7 +751,11 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="3">
             <Accordion.Header>React hooks</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <h6>React hooks are functions that let you use state and other React features without writing a class. The most commonly used hooks are useState and useEffect.</h6>
+              <p>useState Hook - lets you add state to functional components</p>
+              <p>useEffect - lets you perform side effects in functional components. It's similar to lifecycle methods like: componentDidMount, componentDidUpdate, componentWillUnmount in class component.</p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>React routing</Accordion.Header>
