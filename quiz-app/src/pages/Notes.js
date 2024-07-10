@@ -689,6 +689,19 @@ function Notes() {
               </p>
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="24">
+            <Accordion.Header>
+              AXIOS
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                JS library, used to make HTTP requests from both the browser and Node.js
+              </p>
+              <p>Often used to interact with API and handle network requests. Uses promises, which makes it easy to work with async requests and handle responses and errors. Automatic JSON data transformation.
+                X-CSFR-TOKEN: supports cross-site requests forgery protection. Allows timeouts for requests. Works in browser environment and Node.js
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
