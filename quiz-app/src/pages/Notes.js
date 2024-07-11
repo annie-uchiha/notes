@@ -224,15 +224,64 @@ function Notes() {
                 comma. Combinators are used for joining simple CSS selectors,
                 and they specify the connection between them.
               </p>
+              <p>
+                Pseudo-classes: a simple selector used to select what can’t be
+                selected with other selectors, or it is done in a too
+                complicated way.
+              </p>
+              <p>
+                Pseudo-element: a virtual element that doesn’t exist in an
+                explicit form within the element tree of a document.
+                Pseudo-elements are used to select the parts of an element, that
+                cannot be selected with other selectors, and also for styling
+                only certain parts of an element.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>Fonts, FontFace</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Font: a graphic drawing of typefaces of letters and symbols,
+                which create a wholesome stylistic and compositional system, a
+                set of symbols of particular size and look. A font family is a
+                set of fonts that share the same characteristics. A font style
+                is a visual change of a font that belongs to the same typeface.
+              </p>
+              <p>
+                Font families: A font family is a set of fonts that share the
+                same characteristics. Sans serif is a typeface that does not
+                have extending features called "serifs" at the end of strokes.
+                Serif is a typeface that has extending features called serifs on
+                its symbols. Cursive is a handwritten font with many smooth
+                transitions and flowy elements, whirls etc. Monospace is a font
+                where every two letters have equal spacing between them.
+              </p>
+              <p>
+                Font properties: Font-variant font-stretch, letter-spacing,
+                white-space, text-decoration, text-shadow;
+              </p>
+              <p>
+                Font style: A font style is a visual change of a font that
+                belongs to the same typeface.
+              </p>
+
+              <p>
+                Text properties: line-height, text-align, white-space,
+                font-display;
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>BEM, Bootstrap</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Bootstrap: a popular CSS and JS framework. It contains
+                ready-made styles and scripts, so you only need to write the
+                needed style classes and attributes for html-elements to apply
+                them.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Creating forms</Accordion.Header>
