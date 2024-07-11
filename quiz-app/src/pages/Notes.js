@@ -603,177 +603,26 @@ function Notes() {
             <Accordion.Header>DOM</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="18">
-            <Accordion.Header>jQuery</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="19">
-            <Accordion.Header>AJAX</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="20">
-            <Accordion.Header>Work with API</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="21">
-            <Accordion.Header>Web storage</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
-          </Accordion.Item>
-          
         </Accordion>
       </div>
       <div>
-        <h2 className="notes__title" id="reactJS">
-          React.js
+        <h2 className="notes__title" id="general">
+          Additional
         </h2>
         <Accordion>
           <Accordion.Item eventKey="0">
-            <Accordion.Header>What is React.js?</Accordion.Header>
+            <Accordion.Header>Sync and Async?</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <p>JavaScript library.</p>
+              <p>
+                Sync programming - tasks are performed one ata time in a
+                sequential order, blocking further execution until the current
+                task is completed. Async programming - tasks are performed
+                without blocking the main thread, allowing other tasks to run
+                concurrently. It uses callbacks, promises and async/await.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
-            <Accordion.Header>What is JSX?</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <p>
-                JSX stands for JavaScript XML. It is a HTML-like syntax
-                extension for JS used in React.
-              </p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="2">
-            <Accordion.Header>
-              Difference between JS frameworks and libraries?
-            </Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <p>
-                Framework: Inversion of control (the framework calls your code
-                rather than the code calling the framework. Provides a structure
-                and predefined way to build applications; it manages the control
-                flow); Opinionated (set of conventions and dictate how you
-                should structure your code); Integrated (provide everything
-                needed to build an application: routing, state management, data
-                binding and more). Popular frameworks: Angular, Vue.js, Svelte,
-                Ember;
-              </p>
-              <p>
-                Library: Call-based (collection of functions and utilities that
-                your code calls to perform specific tasks. More control);
-                Unopinionated (more flexibility and freedom in how you structure
-                your application); Complementary - used in conjunction with
-                other libraries or frameworks to build applications. Popular
-                libraries: React.js, jQuery, Backbone.js;
-              </p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>React hooks</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <h6>React hooks are functions that let you use state and other React features without writing a class. The most commonly used hooks are useState and useEffect.</h6>
-              <p>useState Hook - lets you add state to functional components</p>
-              <p>useEffect - lets you perform side effects in functional components. It's similar to lifecycle methods like: componentDidMount, componentDidUpdate, componentWillUnmount in class component.</p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="4">
-            <Accordion.Header>React routing</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <h6>React Router is a library used to handle routing in React applications. It enables navigation
-                among different components and allows the app to be single-page application, meaning it dynamically updated the content without reloading the page.
-              </h6>
-              <p></p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="5">
-            <Accordion.Header>React state and props</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <h6>
-                Props - used to pass data from a parent component to a child
-                component.
-              </h6>
-              <h6>
-                State - used to store info that can change and affect the
-                rendering of the component. Unlike props, which are read-only
-                and passed from parent to child components, state is local to
-                the component and can be updated directly within the component.
-              </h6>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="6">
-            <Accordion.Header>Lists and conditional rendering</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <ul>
-                <li>if...else;</li>
-                <li>ternary conditional operator - useful for rendering one of two elements based on a condition;</li>
-                <li>logical operators - && (AND) is used instead of if, which is not supported in JSX; || (OR), instead of else, which is not supported in JSX;</li>
-                <li>map - create and display a list of similar objects/components. It is standard JS function that can be called on arrays;</li>
-                <li>switch - if there are more than 3 conditions to be checked;</li>
-              </ul>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="7">
-            <Accordion.Header>
-              Stateful vs Stateless components
-            </Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <h6>
-                Stateless components (functional components) - are simple
-                functions that take props as input and return React elements.
-                They do not manage their own state.
-              </h6>
-              <h6>
-                Stateful components - class components, manage their own state.
-                They can hold and modify state using the this.state object and
-                the setState method. It can also be achieved in functional
-                components using hooks.
-              </h6>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="8">
-            <Accordion.Header>Lifecycle methods</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <p>
-                Sequence that describes the methods that occur throughout the
-                "life" of the component. React components go through several
-                lifecycle phases from creation to deletion amd React provides
-                lifecycle methods that allow developers to execute code at a
-                specific point in a components lifecycle. Managed by using
-                hooks. Traditionally associated with class components
-                (componentDidMount, componentDidUpdate, componentWillUnmount,
-                shouldComponentUpdate, getDerivedStateFromProps,
-                componentDidCatch) but after the introduction of hooks,
-                functional components can also handle lifecycle events.
-              </p>
-              <ul>
-                <li>
-                  useEffect can handle the class components: componentDidMount,
-                  componentDidUpdate, componentDidUnmount
-                </li>
-                <li>useState and useReducer can manage state updated</li>
-                <li>useContext - context updates</li>
-              </ul>
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-      </div>
-
-      <h2 className="notes__title" id="general">
-        Additional
-      </h2>
-      <Accordion>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Sync and Async?</Accordion.Header>
-          <Accordion.Body className="notes__section">
-            <p>
-              Sync programming - tasks are performed one ata time in a
-              sequential order, blocking further execution until the current
-              task is completed. Async programming - tasks are performed without
-              blocking the main thread, allowing other tasks to run
-              concurrently. It uses callbacks, promises and async/await.
-            </p>
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
             <Accordion.Header>Gulp</Accordion.Header>
             <Accordion.Body className="notes__section">
               <h6>Open source JS toolkit (JS task runner).</h6>
@@ -844,19 +693,198 @@ function Notes() {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header>
-              AXIOS
-            </Accordion.Header>
+            <Accordion.Header>AXIOS</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-                JS library, used to make HTTP requests from both the browser and Node.js
+                JS library, used to make HTTP requests from both the browser and
+                Node.js
               </p>
-              <p>Often used to interact with API and handle network requests. Uses promises, which makes it easy to work with async requests and handle responses and errors. Automatic JSON data transformation.
-                X-CSFR-TOKEN: supports cross-site requests forgery protection. Allows timeouts for requests. Works in browser environment and Node.js
+              <p>
+                Often used to interact with API and handle network requests.
+                Uses promises, which makes it easy to work with async requests
+                and handle responses and errors. Automatic JSON data
+                transformation. X-CSFR-TOKEN: supports cross-site requests
+                forgery protection. Allows timeouts for requests. Works in
+                browser environment and Node.js
               </p>
             </Accordion.Body>
           </Accordion.Item>
-      </Accordion>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>jQuery</Accordion.Header>
+            <Accordion.Body className="notes__section"></Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+            <Accordion.Header>AJAX</Accordion.Header>
+            <Accordion.Body className="notes__section"></Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+            <Accordion.Header>Work with API</Accordion.Header>
+            <Accordion.Body className="notes__section"></Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="7">
+            <Accordion.Header>Web storage</Accordion.Header>
+            <Accordion.Body className="notes__section"></Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
+      <div>
+        <h2 className="notes__title" id="reactJS">
+          React.js
+        </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What is React.js?</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>JavaScript library.</p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>What is JSX?</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                JSX stands for JavaScript XML. It is a HTML-like syntax
+                extension for JS used in React.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>
+              Difference between JS frameworks and libraries?
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Framework: Inversion of control (the framework calls your code
+                rather than the code calling the framework. Provides a structure
+                and predefined way to build applications; it manages the control
+                flow); Opinionated (set of conventions and dictate how you
+                should structure your code); Integrated (provide everything
+                needed to build an application: routing, state management, data
+                binding and more). Popular frameworks: Angular, Vue.js, Svelte,
+                Ember;
+              </p>
+              <p>
+                Library: Call-based (collection of functions and utilities that
+                your code calls to perform specific tasks. More control);
+                Unopinionated (more flexibility and freedom in how you structure
+                your application); Complementary - used in conjunction with
+                other libraries or frameworks to build applications. Popular
+                libraries: React.js, jQuery, Backbone.js;
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>React hooks</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <h6>
+                React hooks are functions that let you use state and other React
+                features without writing a class. The most commonly used hooks
+                are useState and useEffect.
+              </h6>
+              <p>useState Hook - lets you add state to functional components</p>
+              <p>
+                useEffect - lets you perform side effects in functional
+                components. It's similar to lifecycle methods like:
+                componentDidMount, componentDidUpdate, componentWillUnmount in
+                class component.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>React routing</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <h6>
+                React Router is a library used to handle routing in React
+                applications. It enables navigation among different components
+                and allows the app to be single-page application, meaning it
+                dynamically updated the content without reloading the page.
+              </h6>
+              <p></p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+            <Accordion.Header>React state and props</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <h6>
+                Props - used to pass data from a parent component to a child
+                component.
+              </h6>
+              <h6>
+                State - used to store info that can change and affect the
+                rendering of the component. Unlike props, which are read-only
+                and passed from parent to child components, state is local to
+                the component and can be updated directly within the component.
+              </h6>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+            <Accordion.Header>Lists and conditional rendering</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                <li>if...else;</li>
+                <li>
+                  ternary conditional operator - useful for rendering one of two
+                  elements based on a condition;
+                </li>
+                <li>
+                  logical operators - && (AND) is used instead of if, which is
+                  not supported in JSX; || (OR), instead of else, which is not
+                  supported in JSX;
+                </li>
+                <li>
+                  map - create and display a list of similar objects/components.
+                  It is standard JS function that can be called on arrays;
+                </li>
+                <li>
+                  switch - if there are more than 3 conditions to be checked;
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="7">
+            <Accordion.Header>
+              Stateful vs Stateless components
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <h6>
+                Stateless components (functional components) - are simple
+                functions that take props as input and return React elements.
+                They do not manage their own state.
+              </h6>
+              <h6>
+                Stateful components - class components, manage their own state.
+                They can hold and modify state using the this.state object and
+                the setState method. It can also be achieved in functional
+                components using hooks.
+              </h6>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="8">
+            <Accordion.Header>Lifecycle methods</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Sequence that describes the methods that occur throughout the
+                "life" of the component. React components go through several
+                lifecycle phases from creation to deletion amd React provides
+                lifecycle methods that allow developers to execute code at a
+                specific point in a components lifecycle. Managed by using
+                hooks. Traditionally associated with class components
+                (componentDidMount, componentDidUpdate, componentWillUnmount,
+                shouldComponentUpdate, getDerivedStateFromProps,
+                componentDidCatch) but after the introduction of hooks,
+                functional components can also handle lifecycle events.
+              </p>
+              <ul>
+                <li>
+                  useEffect can handle the class components: componentDidMount,
+                  componentDidUpdate, componentDidUnmount
+                </li>
+                <li>useState and useReducer can manage state updated</li>
+                <li>useContext - context updates</li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
     </section>
   );
 }
