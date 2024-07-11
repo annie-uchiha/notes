@@ -213,6 +213,17 @@ function Notes() {
                 to style. Common selectors include element selectors, class
                 selectors, ID selectors, and attribute selectors.
               </p>
+              <p>
+                ID, Classes, Attributes, Types, Elements, Universal. A CSS
+                selector is part of the CSS rule which tells the browser which
+                element or elements of the web page the style will be applied
+                to/ A compound selector is a sequence of simple selectors that
+                are not divided by combinators, so one goes right after another.
+                A complex selector is a sequence of selectors, divided by
+                combinators. Selector grouping is selectors separated by a
+                comma. Combinators are used for joining simple CSS selectors,
+                and they specify the connection between them.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
