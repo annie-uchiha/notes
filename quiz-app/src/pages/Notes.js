@@ -50,6 +50,52 @@ function Notes() {
               </p>
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>What is a markup language?</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Markup language is a set of symbols or sequences, inserted into
+                the text to transfer information about its output or structure.
+                It is part of the computer languages class. A text document
+                written with a markup language contains not only the text itself
+                (as the sequence of words and symbols), but also the additional
+                information about its segments, for example, specification of
+                the headings, accentuations, lists etc. For more complicated
+                cases, the markup language allows the input of interactive
+                elements and contents of other documents.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>A tag/ a descriptor</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                A tag/a descriptor is a named marker. In SGML (HTML, WML,
+                AmigaGuide, and languages of the XML family) it is the element
+                of a hypertext markup language. The text contained in between
+                the start tag and the end tag is displayed and located according
+                to the properties, specified in the start tag.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>Attribute</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                An attribute is part of a tag which extends the capacity of
+                specific tags and allows agile management of the container
+                contents.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="5">
+            <Accordion.Header>Syntax</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+              Syntax is a set of rules that describe the combinations of alphabet symbols compiled by a properly structured program (document) or its fragment. The syntax is opposed to semantics of the language. The syntax describes “clear” language, while semantics applies values (actions) to numerous syntax constructs.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
