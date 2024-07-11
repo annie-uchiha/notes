@@ -19,10 +19,10 @@ function Notes() {
           <a href="#JavaScript">JavaScript</a>
         </li>
         <li>
-          <a href="#reactJS">React.js</a>
+          <a href="#general">Additional</a>
         </li>
         <li>
-          <a href="#general">Additional</a>
+          <a href="#reactJS">React.js</a>
         </li>
       </ul>
       <div>
