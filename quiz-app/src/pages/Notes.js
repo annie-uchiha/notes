@@ -7,7 +7,7 @@ import boxModelImg from "../components/box-model.png";
 function Notes() {
   return (
     <section className="notes">
-      <h1 className="notes__anchors">Notes Page</h1>
+      <h1>Notes Page</h1>
       <ul className="notes__anchors">
         <li>
           <a href="#html5">HTML5</a>
@@ -619,77 +619,8 @@ function Notes() {
             <Accordion.Header>Web storage</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
+         
           <Accordion.Item eventKey="22">
-            <Accordion.Header>Gulp</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <h6>Open source JS toolkit (JS task runner).</h6>
-              <h6>
-                * task runner: post rocessor; makes the code tidier and gets it
-                ready for deployment (compiling the code, minifying files,
-                running tests, linting, deploying applications.); Task runners
-                help improve efficiency, reduce errors and ensure consistency
-                across development environments.
-              </h6>
-              <p>
-                Gulp uses code-centric approach, allowing developers to define
-                tasks using JS. This makes it more flexible an easier to read an
-                maintain.
-              </p>
-              <p>
-                Streaming: Gulp uses Node.js streams, which allows for efficient
-                handling of files. This streaming mechanism enables Gulp to pipe
-                data through multiple tasks without creating temporary files
-                leading to faster build process.
-              </p>
-              <p>
-                Plugins: for variety of tasks (file minification, compilation,
-                concatination, etc.). Designed to do one thing well and they can
-                be composed to build complex workflows.
-              </p>
-              <p>
-                Simple and easy to use API, consisting of four methods: src,
-                dest, task, watch.
-              </p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="23">
-            <Accordion.Header>Webpack</Accordion.Header>
-            <Accordion.Body className="notes__section">
-              <h6>Module bundler for JS applications.</h6>
-
-              <p>
-                Module bundling: bundles various modules (JS, CSS, images, etc.)
-                into single or multiple output files, reducing the number of
-                HTTP requests needed and improving load times.
-              </p>
-              <p>
-                Code splitting: splits the code into multiple bundles that can
-                be loaded on demand, improving the initial load time and
-                performance of web applications.
-              </p>
-              <p>
-                Loaders: transformations applied to the source files of your
-                modules. They allow to preprocess files as they are loaded, such
-                as transpiling ES6+ to ES5 using Babel, compiling SASS to CSS,
-                or loading images and fonts.
-              </p>
-              <p>
-                Plugins: for optimizing bundles, managing environment variables
-                and injecting environment-specific code.
-              </p>
-              <p>
-                The Webpack Dev Server: provides live reloading, making it easy
-                to see changes in real-time as you develop.
-              </p>
-              <p>
-                While Gulp is a task runner focusing on automating repetitive
-                tasks through code, Webpack is primarily a module bundler
-                designed to manage and optimize dependencies and assets. They
-                handle the same tasks with a different approach.
-              </p>
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="24">
             <Accordion.Header>
               AXIOS
             </Accordion.Header>
@@ -855,6 +786,76 @@ function Notes() {
             </p>
           </Accordion.Body>
         </Accordion.Item>
+        <Accordion.Item eventKey="1">
+            <Accordion.Header>Gulp</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <h6>Open source JS toolkit (JS task runner).</h6>
+              <h6>
+                * task runner: post processor; makes the code tidier and gets it
+                ready for deployment (compiling the code, minifying files,
+                running tests, linting, deploying applications.); Task runners
+                help improve efficiency, reduce errors and ensure consistency
+                across development environments.
+              </h6>
+              <p>
+                Gulp uses code-centric approach, allowing developers to define
+                tasks using JS. This makes it more flexible an easier to read an
+                maintain.
+              </p>
+              <p>
+                Streaming: Gulp uses Node.js streams, which allows for efficient
+                handling of files. This streaming mechanism enables Gulp to pipe
+                data through multiple tasks without creating temporary files
+                leading to faster build process.
+              </p>
+              <p>
+                Plugins: for variety of tasks (file minification, compilation,
+                concatination, etc.). Designed to do one thing well and they can
+                be composed to build complex workflows.
+              </p>
+              <p>
+                Simple and easy to use API, consisting of four methods: src,
+                dest, task, watch.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>Webpack</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <h6>Module bundler for JS applications.</h6>
+
+              <p>
+                Module bundling: bundles various modules (JS, CSS, images, etc.)
+                into single or multiple output files, reducing the number of
+                HTTP requests needed and improving load times.
+              </p>
+              <p>
+                Code splitting: splits the code into multiple bundles that can
+                be loaded on demand, improving the initial load time and
+                performance of web applications.
+              </p>
+              <p>
+                Loaders: transformations applied to the source files of your
+                modules. They allow to preprocess files as they are loaded, such
+                as transpiling ES6+ to ES5 using Babel, compiling SASS to CSS,
+                or loading images and fonts.
+              </p>
+              <p>
+                Plugins: for optimizing bundles, managing environment variables
+                and injecting environment-specific code.
+              </p>
+              <p>
+                The Webpack Dev Server: provides live reloading, making it easy
+                to see changes in real-time as you develop.
+              </p>
+              <p>
+                While Gulp is a task runner focusing on automating repetitive
+                tasks through code, Webpack is primarily a module bundler
+                designed to manage and optimize dependencies and assets. They
+                handle the same tasks with a different approach.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
       </Accordion>
     </section>
   );
