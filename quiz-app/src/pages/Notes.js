@@ -92,7 +92,33 @@ function Notes() {
             <Accordion.Header>Syntax</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-              Syntax is a set of rules that describe the combinations of alphabet symbols compiled by a properly structured program (document) or its fragment. The syntax is opposed to semantics of the language. The syntax describes “clear” language, while semantics applies values (actions) to numerous syntax constructs.
+                Syntax is a set of rules that describe the combinations of
+                alphabet symbols compiled by a properly structured program
+                (document) or its fragment. The syntax is opposed to semantics
+                of the language. The syntax describes “clear” language, while
+                semantics applies values (actions) to numerous syntax
+                constructs.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="6">
+            <Accordion.Header>Semantics</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Semantics is a discipline that studies the meaning formalization
+                of programming languages constructs through building the formal
+                mathematical models of them.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="7">
+            <Accordion.Header>Anchor</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                An anchor is a page mark with a unique name at a certain place
+                on a web page. It is used to jump to that specific place.
+                Anchors come in handy in large documents when you need quick
+                access to needed segments.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -120,6 +146,32 @@ function Notes() {
                 when there are conflicting styles. CSS allows for responsive web
                 design, enabling websites to adapt to different screen sizes and
                 devices using media queries.
+              </p>
+              <p>
+                CSS rule: A CSS rule is a block that consists of a selector, a
+                property, and a value. The properties and values for a selector
+                are written in brackets. Every CSS rule consists of two parts:
+                select and one or more declarations. Each declarations consists
+                of property and value.
+              </p>
+              <p>
+                CSS specificity: CSS selector specificity is a way which
+                browsers use to define which CSS values are the most relevant
+                for the element and need to be applied accordingly.
+              </p>
+              <p>Block vs Inline vs Inline-block:</p>
+              <p>
+                Block elements are highest level elements that are visually
+                formatted as blocks and located vertically on a page in a
+                browser window.
+              </p>
+              <p>
+                Inline elements are elements that generate inline containers.
+                They don’t form any new blocks of content.{" "}
+              </p>
+              <p>
+                Inline-block elements are inline elements but you can apply
+                margins, paddings, width, and height values to them.
               </p>
             </Accordion.Body>
           </Accordion.Item>
