@@ -1016,6 +1016,24 @@ function Notes() {
               </p>
             </Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="9">
+            <Accordion.Header>Callback Hell</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with async logic.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="10">
+            <Accordion.Header>Pure Function</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                A function or section of code that always yields the same outcome when the same arguments are supplied is known as a pure function.
+                It is independent of any state or data changes that occur while a program is running. 
+                Instead, it just relies on the arguments it is given. Additionally, a pure function does not result in any side effects that can be seen, such as network queries, data alteration, etc.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
