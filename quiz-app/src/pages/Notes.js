@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
-import eventLoopsEvents from "../components/event-loop-vs-events.png"
+import eventLoopsEvents from "../components/event-loop-vs-events.png";
 
 function Notes() {
   return (
@@ -779,6 +779,36 @@ function Notes() {
                 alt="event-loop-vs-events"
                 src={eventLoopsEvents}
               ></img>
+              <p>
+                Event loops are part of the JS runtime environment responsible
+                for async operations. It checks the call stack and task queue.
+                When the call stack is empty it takes tasks from the task queue
+                for execution. Stack overflow: occurs when the call stack
+                exceeds its maximum size due to excessive function calls,
+                leading to a stack overflow error.
+              </p>
+              <p>
+                Events in JS: drive the interactivity of web applications,
+                allowing them to respond dynamically to user actions.
+              </p>
+              <p>
+                Event propagation: mechanism by which events are transmitted
+                through the DOM hierarchy. Two phases: capturing and bubbling.
+              </p>
+              <p>
+                Bubbling: after the event reaches the target element, it then
+                bubbles up through the ancestor elements. This might become a
+                problem because it causes events to propagate up the DOM tree,
+                triggering parent elements' event handlers attached to parent
+                elements that you don't want triggered when a child element is
+                interacted with. Methods like stopPropagation() can prevent
+                this.
+              </p>
+              <p>
+                Delegation: technique for managing event handling - attach a
+                single event listener to a parent element, instead of multiple
+                to individual child elements.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="17">
