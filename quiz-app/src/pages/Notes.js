@@ -1095,12 +1095,29 @@ function Notes() {
           <Accordion.Item eventKey="4">
             <Accordion.Header>jQuery</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <p>JS library that focuses on the interaction of JS, HTML and CSS, calling any DOM element and manipulating it.</p>
+              <p>
+                JS library that focuses on the interaction of JS, HTML and CSS,
+                calling any DOM element and manipulating it.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>AJAX</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>Async JavScript and XML</p>
+              <p>
+                Creates dynamic web applications with async requests without
+                reloading the page.
+              </p>
+              <p>
+                A technique used in web development to send and receive data
+                from a server async without interfering with the current page.
+                Before AJAX, interacting with the web pages required full page
+                reloads whenever data was fetched or sent to a server. AJAX
+                requests are typically performed using XMLHttpRequest object in
+                JS, or more recently using the FetchAPI or libraries like Axios.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Work with API</Accordion.Header>
