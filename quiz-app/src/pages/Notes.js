@@ -336,7 +336,8 @@ function Notes() {
             <Accordion.Body className="notes__section">
               <p>
                 Weakly typed programming language used for Front-end development
-                to create interactive and dynamic web applications.
+                to create interactive and dynamic web applications. JS is a
+                single-threaded asynchronous programming language.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -790,10 +791,13 @@ function Notes() {
                 <li>querySelectorAll() method</li>
               </ul>
               <p>*BOM - Browser Object Model</p>
-              <p>Browser-specific convention referring to all the object exposed by the web browser.
-                The BOM allows JS to "interact with" the browser. The window object represents a browser window and all its corresponding features.
-                A window object is created automatically by the browser itself.
-                JS's window.screen object contains information about the user's screen.
+              <p>
+                Browser-specific convention referring to all the object exposed
+                by the web browser. The BOM allows JS to "interact with" the
+                browser. The window object represents a browser window and all
+                its corresponding features. A window object is created
+                automatically by the browser itself. JS's window.screen object
+                contains information about the user's screen.
               </p>
               <p>Window properties of BOM:</p>
               <ul>
@@ -857,6 +861,24 @@ function Notes() {
                 local, function or block scope. This entire chain construction
                 continues till the user decides to halt it in accordance with
                 the need.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="20">
+            <Accordion.Header>Explain This keyword</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                this keyword refers to an object. The thing about it is that the
+                object it refers to will vary depending on how and where this is
+                being called. If we call it by itself, meaning not within a
+                function, object, or whatever it will refer to the global window
+                object. The majority of time, the value of this depends on the
+                runtime binding used to call a function. It may change every
+                time the function is called and cannot be changed by assignment
+                while the function is being executed. Although arrow functions
+                don't give their own this binding (it keeps the this value of
+                the enclosing lexical context), the bind() method can set the
+                value of a function's this regardless of how it's called.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -984,9 +1006,15 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>Critical Rendering Path</Accordion.Header>
-            <Accordion.Body className="notes__section"><p>The sequence of steps the browser
-              goes through to convert the HTML, CSS and JS into pixels on the screen.
-              Optimizing the critical render path improves render performance. The critical rendering path includes the DOM, CSS Object Model, render tree and layout.</p></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                The sequence of steps the browser goes through to convert the
+                HTML, CSS and JS into pixels on the screen. Optimizing the
+                critical render path improves render performance. The critical
+                rendering path includes the DOM, CSS Object Model, render tree
+                and layout.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
