@@ -761,6 +761,37 @@ function Notes() {
             <Accordion.Header>DOM</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="18">
+            <Accordion.Header>
+              Is JavaScript a statically typed or a dynamically typed language?
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                JavaScript is a dynamically typed language. In a dynamically
+                typed language, the type of a variable is checked during
+                run-time in a contrast to a statically typed language, where the
+                type of a variable is checked during compile-time.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="19">
+            <Accordion.Header>Global and local scopes</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Global Scope: A variable with global scope is one that can be
+                accessed from anywhere in the application. It is the default
+                scope for all code running in script mode.
+              </p>
+              <p>
+                Local Scope: Any declared variable inside of a function is
+                referred to as having local scope. Within a function, a local
+                variable can be accessed. It throws an error if you attempt to
+                access any variables specified inside a function from the
+                outside or another function. The scope for code running in
+                module mode.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
