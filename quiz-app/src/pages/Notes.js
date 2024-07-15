@@ -1020,7 +1020,9 @@ function Notes() {
             <Accordion.Header>Callback Hell</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-                Callback Hell is an anti-pattern with multiple nested callbacks which makes code hard to read and debug when dealing with async logic.
+                Callback Hell is an anti-pattern with multiple nested callbacks
+                which makes code hard to read and debug when dealing with async
+                logic.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -1028,9 +1030,26 @@ function Notes() {
             <Accordion.Header>Pure Function</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-                A function or section of code that always yields the same outcome when the same arguments are supplied is known as a pure function.
-                It is independent of any state or data changes that occur while a program is running. 
-                Instead, it just relies on the arguments it is given. Additionally, a pure function does not result in any side effects that can be seen, such as network queries, data alteration, etc.
+                A function or section of code that always yields the same
+                outcome when the same arguments are supplied is known as a pure
+                function. It is independent of any state or data changes that
+                occur while a program is running. Instead, it just relies on the
+                arguments it is given. Additionally, a pure function does not
+                result in any side effects that can be seen, such as network
+                queries, data alteration, etc.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="11">
+            <Accordion.Header>JS Strict Mode</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                Allows you to write a code or a function in a "strict"
+                operational environment. When it comes to throwing errors, JS is
+                often not extremely severe. However, in "strict mode", all
+                errors, even silent faults, will result in a throw. Debugging
+                hence becomes more easier. Thus, the chance of a coder
+                committing a mistake is decreased.
               </p>
             </Accordion.Body>
           </Accordion.Item>
