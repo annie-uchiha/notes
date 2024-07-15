@@ -4,6 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
+import eventLoopsEvents from "../components/event-loops-vs-events.png"
 
 function Notes() {
   return (
@@ -773,6 +774,11 @@ function Notes() {
                 elements, which listen for specific events and then executes a
                 function in response.
               </p>
+              <img
+                className="notes__img"
+                alt="event-loop-vs-events"
+                src={eventLoopsEvents}
+              ></img>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="17">
