@@ -375,6 +375,11 @@ function Notes() {
                   </li>
                 </ul>
               </div>
+              <p>
+                Temporal Dead Zone: a behaviour that occurs with variables
+                declared using let and const keywords. It is a behaviour where
+                we try to access a variable before it is initialized.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
@@ -790,13 +795,20 @@ function Notes() {
                 outside or another function. The scope for code running in
                 module mode.
               </p>
-              <p>Function Scope: In JavaScript, every new function results in the general of a fresh scope.
-                Variables declared inside a function cannot be accessed from outside the function or from another function.
-                When used inside of a function, var, let and const all act similarly. The scope created with a function.
+              <p>
+                Function Scope: In JavaScript, every new function results in the
+                general of a fresh scope. Variables declared inside a function
+                cannot be accessed from outside the function or from another
+                function. When used inside of a function, var, let and const all
+                act similarly. The scope created with a function.
               </p>
-              <p>Scope Chain: a situation when one variable, which may have a global, local, function or block scope, is used by another
-                variable, function, or block, which may also have a global, local, function or block scope.
-                This entire chain construction continues till the user decides to halt it in accordance with the need.
+              <p>
+                Scope Chain: a situation when one variable, which may have a
+                global, local, function or block scope, is used by another
+                variable, function, or block, which may also have a global,
+                local, function or block scope. This entire chain construction
+                continues till the user decides to halt it in accordance with
+                the need.
               </p>
             </Accordion.Body>
           </Accordion.Item>
