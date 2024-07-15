@@ -764,7 +764,55 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="17">
             <Accordion.Header>DOM</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>DOM - Document Object Model</p>
+              <p>
+                An element may be added, changed, or removed from a document
+                using the DOM, a programming interface for HTML and XML
+                documents. It specifies how a document is accessed and handled,
+                as well as its logical structure. The DOM allows the webpage to
+                be represented as a structured hierarchy, making it simple to
+                access and modify HTML tags, IDs, classes, attributes, and
+                elements using the Documen object's provided commands and
+                methods. This makes it easier for programmers and users to
+                understand the document.
+              </p>
+              <p>
+                There are several methods to find and manipulate the behavior of
+                the HTML Element:
+              </p>
+              <ul>
+                <li>getElementById() method</li>
+                <li>getElementsByClassName() method</li>
+                <li>getElementsByName() method</li>
+                <li>getElementsByTagName() method</li>
+                <li>querySelector() method</li>
+                <li>querySelectorAll() method</li>
+              </ul>
+              <p>*BOM - Browser Object Model</p>
+              <p>Browser-specific convention referring to all the object exposed by the web browser.
+                The BOM allows JS to "interact with" the browser. The window object represents a browser window and all its corresponding features.
+                A window object is created automatically by the browser itself.
+                JS's window.screen object contains information about the user's screen.
+              </p>
+              <p>Window properties of BOM:</p>
+              <ul>
+                <li>screen.width</li>
+                <li>screen.height</li>
+                <li>screen.availWidth</li>
+                <li>screen.availHeight</li>
+                <li>screen.colorDepth</li>
+                <li>screen.pixelDepth</li>
+              </ul>
+              <p>Window methods of BOM:</p>
+              <ul>
+                <li>window.open() method</li>
+                <li>window.close() method</li>
+                <li>window.moveTo() method</li>
+                <li>window.moveBy() method</li>
+                <li>window.resizeTo() method</li>
+              </ul>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="18">
             <Accordion.Header>
