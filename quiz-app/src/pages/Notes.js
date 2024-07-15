@@ -305,11 +305,29 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Creating forms</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Web form on a site is an analog of a paper form, survey, or
+                blank sheet. Form fields are the elements of a form where the
+                text can be put in. These are text fields, switches, buttons,
+                etc. The choice of elements depends on the type of information
+                needed from the visitor. Validation rules are rules that ensure
+                the proper filling of forms by the website visitor.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
             <Accordion.Header>SVG</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                SVG (Scalable Vector Graphics) is the markup language for
+                scalable vector graphics, created by the W3C; it is part of the
+                XML and is used for describing two-dimensional vector and
+                vector/halftone graphics in the XML format. It supports both
+                static and animated interactive graphics. SVG standard is an
+                open standard without license charges.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>CSS animations</Accordion.Header>
@@ -318,19 +336,115 @@ function Notes() {
                 CSS supports animations and transitions, allowing for smooth and
                 visually appealing changes to styles.
               </p>
+              <p>
+                Animation — a gradual change of visual parameters of an object.
+                Transition — an animation which occurs between the two states of
+                an object (starting state and end-state). It may be a change of
+                size, transparency, position etc. There’s always a start point
+                and an end point. CSS animation — an animation which does not
+                necessarily include the start and end stages, or requires some
+                more careful frame-by-frame setup. Key frame — a property of an
+                element (transparency, color, position etc.) which has to be
+                applied to the element at a certain moment of time. Time
+                function for key frames — a time function which is to be used
+                when moving the animation to the next key frame.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
             <Accordion.Header>CSS GRID</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                CSS Grid Layout is the most powerful tool for mapping out
+                layouts that is currently available in CSS. This is a
+                two-dimensional system that can contain rows and columns (while
+                the Flexbox module is a one-dimensional system). The purpose of
+                Grid Layout is to fully change the design of user interfaces,
+                which are completely grid-based. Grid container is an element
+                with a “display: grid” property. It is parent to all the other
+                grid items. Grid items are direct descendants of the grid
+                container. It is important that the descendants of grid items
+                are no longer descendants of the grid container. Grid lines are
+                division lines which make up the grid structure. They can be
+                horizontal and vertical (row lines and column lines) and are
+                placed on both sides of a row or a grid. Grid track is the space
+                between the two neighboring grid lines. Grid cell is the space
+                in between the two neighboring horizontal and two neighboring
+                vertical grid lines. Grid area is a general space surrounded by
+                four grid lines. A grid area can consist of any number of grid
+                cells.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="10">
             <Accordion.Header>Cross-browser compatibility</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                A browser is a special program for viewing websites on the
+                internet. Cross browser is the right layout of the website that
+                helps the pages be displayed in the same way in different
+                browsers. The execution is conveyed by using HTML and CSS as
+                well as many different hacks, and sometimes JavaScript. Vendor
+                prefixes are prefixes to the name of a CSS property that are
+                added by vendors, or manufacturers of browsers for
+                unstandardized properties. Progressive enhancement is an
+                approach that suggests that web interfaces should be created
+                step-by-step in a cycled way from simple to complex. Graceful
+                Degradation is a development approach when the product is
+                created first, it expects a full range of components from the
+                environment, and then the ability to work without some of them
+                is added.{" "}
+              </p>
+              <p>
+                https://autoprefixer.github.io/ - Autoprefixer CSS can generate
+                the prefixes for your code.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="11">
             <Accordion.Header>Adaptive and responsive design</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Adaptive design uses fixed layouts tailored to specific screen
+                sizes, while responsive design uses flexible layouts that adjust
+                dynamically to any screen size.
+              </p>
+              <p>
+                A media query is a statement consisting of a keyword that
+                describes the type of device (optional) and a statement that
+                checks the specs of the device. Usually width is the one being
+                checked. A media query is a logical statement that returns
+                either true or false.{" "}
+              </p>
+              <p>
+                Fixed or static layout is a layout that will stay the same
+                despite the size of a browser window or a device. All the
+                elements have specific width in pixels. If the screen resolution
+                is big, the browser window will be full screen, sometimes with
+                extra space. Vice versa, on mobile devices a scrollbar appears.{" "}
+              </p>
+              <p>
+                Fluid layout is a layout when a page takes up the whole browser
+                width despite its size and the device you view it from. The
+                width of elements is given in percent from the width of the
+                window, and thus occupies the whole available space. It is hard
+                to achieve efficient design with this layout since the pages
+                won’t look the same on all devices.{" "}
+              </p>
+              <p>
+                Responsive layout is when pages respond to any screen
+                resolution. It doesn’t matter whether a user opened it on a
+                laptop, a giant hi res screen or a smartphone - the page will
+                look good and be comfortable to use anyway. It is achieved by
+                applying multiple stylesheets for different resolutions.{" "}
+              </p>
+              <p>
+                Dynamic layout is created with a CMS right away from the
+                database blocks, chosen by the layout designer. The page is laid
+                out every time its URL gets a query, this takes longer than a
+                page once made by hand.{" "}
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="12">
             <Accordion.Header>Responsive graphics</Accordion.Header>
@@ -338,11 +452,145 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="13">
             <Accordion.Header>Responsive navigation</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Website navigation is the possibility to move between the pages.
+                The simpler and clearer it is, the better for the users, since
+                it helps find the needed information and orient oneself on the
+                website faster.{" "}
+              </p>
+              <p>
+                A hamburger menu is an icon with three horizontal lines (two
+                buns and a patty), which is used to signify a menu. Clicking the
+                icon opens up the navigation panel.{" "}
+              </p>
+              <p>
+                Dropup menu is used to save space on a page. It is relevant if
+                an internet platform has a complex multi-level organization and
+                you need to make the navigation as informative as possible. 5
+                points in a row is no use, so instead, hovering over the item
+                makes the sub-items drop from it.{" "}
+              </p>
+              <p>
+                Curtain Menu is a full screen menu with a few smooth
+                transitions.
+              </p>
+              <p>
+                Collapse Sidebar is a menu that collapses to the side of a page
+                and takes up some part of it.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
             <Accordion.Header>SEO for developer</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                A search engine is a computer system for info search. One of the
+                most well-known ways to use it is web-services for finding text
+                or graphic information on the web.{" "}
+              </p>
+              <p>
+                Search engine optimization or SEO is a set of regulations for
+                internal and external optimization aimed to raise the rank of
+                the website in the search results of search engines according to
+                the user queries. It is meant to increase web traffic (for info
+                resources), number of potential clients (for commerce), and
+                future monetization (income) for this traffic.{" "}
+              </p>
+              <p>
+                Web traffic or Internet traffic is the scope of information
+                transferred via computer network within a certain time frame.
+              </p>
+              <p>
+                URL is the first thing the search engine sees. It also creates
+                the impression of a website for a user. The way the search
+                engine reads the website address is the determining factor of
+                SEO efficiency.
+              </p>
+
+              <div>
+                Ways to increase SEO:
+                <ul>
+                  <li>
+                    Meta tags are tags that supply additional information about
+                    the website page to the search systems. Meta tags are placed
+                    between <head> </head>
+                  </li>
+                  <li>Adding favicon</li>
+                  <li>
+                    Optimizing page load speed: Minify CSS/JS, use image
+                    compression, and leverage browser caching.
+                  </li>
+                  <li>
+                    Using semantic HTML: Proper HTML tags (like header, article,
+                    section) improve readability and search engine
+                    understanding.
+                  </li>
+                  <li>
+                    Creating an XML sitemap: Helps search engines index site
+                    pages efficiently.
+                  </li>
+                  <li>
+                    Using structured data: Implement schema markup to enhance
+                    search engine results.
+                  </li>
+                  <li>
+                    Ensuring mobile-friendliness: Use responsive design
+                    principles to enhance mobile user experience.
+                  </li>
+                  <li>
+                    Improving URL structure: Use descriptive, keyword-rich URLs.
+                  </li>
+                  <li>
+                    Implementing alt attributes: Use descriptive alt text for
+                    images.
+                  </li>
+                  <li>
+                    Creating high-quality content: Regularly update the site
+                    with relevant and valuable content.
+                  </li>
+                  <li>
+                    Using HTTPS: Ensure the site is secure with an SSL
+                    certificate.
+                  </li>
+                  <li>
+                    Internal linking: Improve site navigation and link to
+                    important pages within the site.
+                  </li>
+                </ul>
+              </div>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="15">
+            <Accordion.Header>
+              CSS Positioning and transformation
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                A reference point - the absolute elements by default are
+                positioned in the coordinate system, bound to the browser
+                window. But it can be changed. Position is what helps to define
+                where the elements appear on screen and how they appear in CSS.
+                Static position is a default value for elements. Statically
+                positioned objects are displayed in the normal flow of pages.
+                Absolute position is the position when an element doesn’t exist
+                the flow of a document and its position is set referred to the
+                edges of a browser. This type can be applied by the absolute
+                value of the position property. The coordinates are set in
+                relation to the browser window edges aka display area. Fixed
+                positioning is similar to absolute but with a few differences: A
+                fixed element is also out of the flow.. A fixed element is bound
+                to a certain point in a browser window and stays there even when
+                scrolling the page. A fixed element can be positioned with help
+                of top, left, right, bottom properties, but the reference point
+                is always bound to the browser window. Relative position is used
+                for fixing an element at a specific place when scrolling the
+                page. It is usually applied to headings, menu or navigation bars
+                for quick access or visibility. CSS transform is transforming an
+                element referred to the internal coordinate system without
+                interfering with any other elements on a web page.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
