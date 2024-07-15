@@ -982,6 +982,12 @@ function Notes() {
             <Accordion.Header>Web storage</Accordion.Header>
             <Accordion.Body className="notes__section"></Accordion.Body>
           </Accordion.Item>
+          <Accordion.Item eventKey="8">
+            <Accordion.Header>Critical Rendering Path</Accordion.Header>
+            <Accordion.Body className="notes__section"><p>The sequence of steps the browser
+              goes through to convert the HTML, CSS and JS into pixels on the screen.
+              Optimizing the critical render path improves render performance. The critical rendering path includes the DOM, CSS Object Model, render tree and layout.</p></Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </div>
       <div>
