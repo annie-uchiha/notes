@@ -1094,7 +1094,9 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="4">
             <Accordion.Header>jQuery</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>JS library that focuses on the interaction of JS, HTML and CSS, calling any DOM element and manipulating it.</p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>AJAX</Accordion.Header>
