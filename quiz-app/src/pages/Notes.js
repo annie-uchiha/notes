@@ -3,7 +3,7 @@ import "./Notes.scss";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
-import cookieStorage from "../components/cookie.local.storage.png"
+import cookieStorage from "../components/cookie.local.storage.png";
 
 function Notes() {
   return (
@@ -762,7 +762,18 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="16">
             <Accordion.Header>Events</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Actions or occurrences that happen in the browser, triggered by
+                user interaction or by the browser itself. These interactions
+                include mouse clicks, keyboard inputs, page loading, etc.
+              </p>
+              <p>
+                Event handling involves attaching event listeners to HTML
+                elements, which listen for specific events and then executes a
+                function in response.
+              </p>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="17">
             <Accordion.Header>DOM</Accordion.Header>
@@ -785,30 +796,67 @@ function Notes() {
               </p>
               <ul>
                 <li>getElementById() method - select by element's ID</li>
-                <li>getElementsByClassName() method - select based on class attribute</li>
+                <li>
+                  getElementsByClassName() method - select based on class
+                  attribute
+                </li>
                 <li>getElementsByName() method </li>
-                <li>getElementsByTagName() method - select based on tag name</li>
-                <li>querySelector() method - selects the first element that matches a specified CSS selector</li>
-                <li>querySelectorAll() method - selects all elements that match a specified CSS selector</li>
-              <li>* Some selectors might not be supported in older browsers.</li>
+                <li>
+                  getElementsByTagName() method - select based on tag name
+                </li>
+                <li>
+                  querySelector() method - selects the first element that
+                  matches a specified CSS selector
+                </li>
+                <li>
+                  querySelectorAll() method - selects all elements that match a
+                  specified CSS selector
+                </li>
+                <li>
+                  * Some selectors might not be supported in older browsers.
+                </li>
               </ul>
               <p>Built-in methods in DOM</p>
               <ul>
-                <li>createElement - creates a new element with a specified tag name;</li>
-              <li>appendChild - appends a node as the last child of a specified parent node;</li>
-              <li>removeChild - removes a child node from the DOM;</li>
-              <li>setAttribute - sets the value of an attribute on the specific element;</li>
-              <li>getAttribute - retrieves the value of a specified attribute on the element;</li>
-              <li>addEventListener - attaches an event listener to an element, triggering a function when event occurs;</li>
-              <li>removeEventListener - removes an event listener from an element;</li>
+                <li>
+                  createElement - creates a new element with a specified tag
+                  name;
+                </li>
+                <li>
+                  appendChild - appends a node as the last child of a specified
+                  parent node;
+                </li>
+                <li>removeChild - removes a child node from the DOM;</li>
+                <li>
+                  setAttribute - sets the value of an attribute on the specific
+                  element;
+                </li>
+                <li>
+                  getAttribute - retrieves the value of a specified attribute on
+                  the element;
+                </li>
+                <li>
+                  addEventListener - attaches an event listener to an element,
+                  triggering a function when event occurs;
+                </li>
+                <li>
+                  removeEventListener - removes an event listener from an
+                  element;
+                </li>
               </ul>
               <p>Event listener vs. On-event</p>
-              <p>Event listener: functions attached to elements to listen to specific events (click, mouseover, keyup).
-                Can be attached to multiple elements or multiple events on the same element.
-                Better control and flexibility. Separate JS behavior from HTML markup.
+              <p>
+                Event listener: functions attached to elements to listen to
+                specific events (click, mouseover, keyup). Can be attached to
+                multiple elements or multiple events on the same element. Better
+                control and flexibility. Separate JS behavior from HTML markup.
               </p>
-              <p>On-event: HTML attribute that specify JS code to execute when a specific event occurs on element (onclick, onmouseover, onkeydown).
-                Simpler. Limitations: attached to only one event handler per event type per element. For small projects and quick prototyping.
+              <p>
+                On-event: HTML attribute that specify JS code to execute when a
+                specific event occurs on element (onclick, onmouseover,
+                onkeydown). Simpler. Limitations: attached to only one event
+                handler per event type per element. For small projects and quick
+                prototyping.
               </p>
               <p>*BOM - Browser Object Model</p>
               <p>
@@ -1023,7 +1071,7 @@ function Notes() {
           <Accordion.Item eventKey="7">
             <Accordion.Header>Web storage</Accordion.Header>
             <Accordion.Body className="notes__section">
-            <img
+              <img
                 className="notes__img"
                 alt="storage-img"
                 src={cookieStorage}
