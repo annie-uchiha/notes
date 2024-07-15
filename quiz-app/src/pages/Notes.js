@@ -3,6 +3,7 @@ import "./Notes.scss";
 import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
+import cookieStorage from "../components/cookie.local.storage.png"
 
 function Notes() {
   return (
@@ -1002,7 +1003,13 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="7">
             <Accordion.Header>Web storage</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+            <img
+                className="notes__img"
+                alt="storage-img"
+                src={cookieStorage}
+              ></img>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>Critical Rendering Path</Accordion.Header>
