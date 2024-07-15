@@ -336,19 +336,21 @@ function Notes() {
                 CSS supports animations and transitions, allowing for smooth and
                 visually appealing changes to styles.
               </p>
-              <p>
-                Animation — a gradual change of visual parameters of an object.
-                Transition — an animation which occurs between the two states of
+              <ul>
+                <li>Animation — a gradual change of visual parameters of an object.</li>
+                <li> Transition — an animation which occurs between the two states of
                 an object (starting state and end-state). It may be a change of
                 size, transparency, position etc. There’s always a start point
-                and an end point. CSS animation — an animation which does not
+                and an end point.</li>
+                <li>CSS animation — an animation which does not
                 necessarily include the start and end stages, or requires some
-                more careful frame-by-frame setup. Key frame — a property of an
+                more careful frame-by-frame setup.</li>
+                <li> Key frame — a property of an
                 element (transparency, color, position etc.) which has to be
-                applied to the element at a certain moment of time. Time
-                function for key frames — a time function which is to be used
-                when moving the animation to the next key frame.
-              </p>
+                applied to the element at a certain moment of time.</li>
+                <li> Time function for key frames — a time function which is to be used
+                when moving the animation to the next key frame.</li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
@@ -516,7 +518,7 @@ function Notes() {
               <p>
                 A search engine is a computer system for info search. One of the
                 most well-known ways to use it is web-services for finding text
-                or graphic information on the web.{" "}
+                or graphic information on the web.
               </p>
               <p>
                 Search engine optimization or SEO is a set of regulations for
@@ -524,7 +526,7 @@ function Notes() {
                 the website in the search results of search engines according to
                 the user queries. It is meant to increase web traffic (for info
                 resources), number of potential clients (for commerce), and
-                future monetization (income) for this traffic.{" "}
+                future monetization (income) for this traffic.
               </p>
               <p>
                 Web traffic or Internet traffic is the scope of information
