@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
-import eventLoopsEvents from "../components/event-loops-vs-events.png"
+import eventLoopsEvents from "../components/event-loop-vs-events.png"
 
 function Notes() {
   return (
