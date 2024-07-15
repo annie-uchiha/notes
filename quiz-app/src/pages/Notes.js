@@ -61,7 +61,7 @@ function Notes() {
                 written with a markup language contains not only the text itself
                 (as the sequence of words and symbols), but also the additional
                 information about its segments, for example, specification of
-                the headings, accentuations, lists etc. For more complicated
+                the headings, accentuation, lists etc. For more complicated
                 cases, the markup language allows the input of interactive
                 elements and contents of other documents.
               </p>
@@ -784,13 +784,32 @@ function Notes() {
                 the HTML Element:
               </p>
               <ul>
-                <li>getElementById() method</li>
-                <li>getElementsByClassName() method</li>
-                <li>getElementsByName() method</li>
-                <li>getElementsByTagName() method</li>
-                <li>querySelector() method</li>
-                <li>querySelectorAll() method</li>
+                <li>getElementById() method - select by element's ID</li>
+                <li>getElementsByClassName() method - select based on class attribute</li>
+                <li>getElementsByName() method </li>
+                <li>getElementsByTagName() method - select based on tag name</li>
+                <li>querySelector() method - selects the first element that matches a specified CSS selector</li>
+                <li>querySelectorAll() method - selects all elements that match a specified CSS selector</li>
+              <li>* Some selectors might not be supported in older browsers.</li>
               </ul>
+              <p>Built-in methods in DOM</p>
+              <ul>
+                <li>createElement - creates a new element with a specified tag name;</li>
+              <li>appendChild - appends a node as the last child of a specified parent node;</li>
+              <li>removeChild - removes a child node from the DOM;</li>
+              <li>setAttribute - sets the value of an attribute on the specific element;</li>
+              <li>getAttribute - retrieves the value of a specified attribute on the element;</li>
+              <li>addEventListener - attaches an event listener to an element, triggering a function when event occurs;</li>
+              <li>removeEventListener - removes an event listener from an element;</li>
+              </ul>
+              <p>Event listener vs. On-event</p>
+              <p>Event listener: functions attached to elements to listen to specific events (click, mouseover, keyup).
+                Can be attached to multiple elements or multiple events on the same element.
+                Better control and flexibility. Separate JS behavior from HTML markup.
+              </p>
+              <p>On-event: HTML attribute that specify JS code to execute when a specific event occurs on element (onclick, onmouseover, onkeydown).
+                Simpler. Limitations: attached to only one event handler per event type per element. For small projects and quick prototyping.
+              </p>
               <p>*BOM - Browser Object Model</p>
               <p>
                 Browser-specific convention referring to all the object exposed
