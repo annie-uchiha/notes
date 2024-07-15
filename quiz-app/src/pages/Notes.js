@@ -272,11 +272,29 @@ function Notes() {
                 Text properties: line-height, text-align, white-space,
                 font-display;
               </p>
+              <p>
+                Line-spacing is the space between the lines of a paragraph. A
+                baseline is a conceptual line that serves as axis for aligning
+                the bottom edge of most letters. Sans serif is a typeface that
+                does not have extending features called "serifs" at the end of
+                strokes. Serif is a typeface that has extending features called
+                serifs on its symbols. Cursive is a handwritten font with many
+                smooth transitions and flowy elements, whirls etc. Monospace is
+                a font where every two letters have equal spacing between them.
+                A glyph is a specific graphic image of a symbol.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
             <Accordion.Header>BEM, Bootstrap</Accordion.Header>
             <Accordion.Body className="notes__section">
+              <p>
+                The BEM (Block Element Modifier) methodology is a front-end
+                development approach used to structure CSS classes. It divides a
+                web page into blocks (independent components), elements (parts
+                of blocks), and modifiers (variants or states of
+                blocks/elements), ensuring modularity and reusability.
+              </p>
               <p>
                 Bootstrap: a popular CSS and JS framework. It contains
                 ready-made styles and scripts, so you only need to write the
