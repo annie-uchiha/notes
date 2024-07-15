@@ -393,7 +393,7 @@ function Notes() {
                 Degradation is a development approach when the product is
                 created first, it expects a full range of components from the
                 environment, and then the ability to work without some of them
-                is added.{" "}
+                is added.
               </p>
               <p>
                 https://autoprefixer.github.io/ - Autoprefixer CSS can generate
@@ -414,14 +414,14 @@ function Notes() {
                 describes the type of device (optional) and a statement that
                 checks the specs of the device. Usually width is the one being
                 checked. A media query is a logical statement that returns
-                either true or false.{" "}
+                either true or false.
               </p>
               <p>
                 Fixed or static layout is a layout that will stay the same
                 despite the size of a browser window or a device. All the
                 elements have specific width in pixels. If the screen resolution
                 is big, the browser window will be full screen, sometimes with
-                extra space. Vice versa, on mobile devices a scrollbar appears.{" "}
+                extra space. Vice versa, on mobile devices a scrollbar appears.
               </p>
               <p>
                 Fluid layout is a layout when a page takes up the whole browser
@@ -429,26 +429,55 @@ function Notes() {
                 width of elements is given in percent from the width of the
                 window, and thus occupies the whole available space. It is hard
                 to achieve efficient design with this layout since the pages
-                won’t look the same on all devices.{" "}
+                won’t look the same on all devices.
               </p>
               <p>
                 Responsive layout is when pages respond to any screen
                 resolution. It doesn’t matter whether a user opened it on a
                 laptop, a giant hi res screen or a smartphone - the page will
                 look good and be comfortable to use anyway. It is achieved by
-                applying multiple stylesheets for different resolutions.{" "}
+                applying multiple stylesheets for different resolutions.
               </p>
               <p>
                 Dynamic layout is created with a CMS right away from the
                 database blocks, chosen by the layout designer. The page is laid
                 out every time its URL gets a query, this takes longer than a
-                page once made by hand.{" "}
+                page once made by hand.
               </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="12">
             <Accordion.Header>Responsive graphics</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <h6>Ways to make graphics responsive:</h6>
+              <ul>
+                <li>
+                  Using percentage-based widths: Set the width of images and
+                  graphics to a percentage of their container.
+                </li>
+                <li>
+                  CSS media queries: Adjust the styles of graphics based on
+                  different screen sizes.
+                </li>
+                <li>
+                  Flexible grid systems: Use CSS Grid or Flexbox to create
+                  responsive layouts that adjust the size of graphics within a
+                  grid.
+                </li>
+                <li>
+                  Viewport units: Use vw, vh, vmin, and vmax units to scale
+                  graphics relative to the viewport size.
+                </li>
+                <li>
+                  Object-fit property: Make images fit within their containers
+                  while preserving aspect ratio.
+                </li>
+                <li>
+                  Picture element: Use the 'picture element to serve different
+                  images based on screen size or resolution.
+                </li>
+              </ul>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="13">
             <Accordion.Header>Responsive navigation</Accordion.Header>
@@ -457,19 +486,19 @@ function Notes() {
                 Website navigation is the possibility to move between the pages.
                 The simpler and clearer it is, the better for the users, since
                 it helps find the needed information and orient oneself on the
-                website faster.{" "}
+                website faster.
               </p>
               <p>
                 A hamburger menu is an icon with three horizontal lines (two
                 buns and a patty), which is used to signify a menu. Clicking the
-                icon opens up the navigation panel.{" "}
+                icon opens up the navigation panel.
               </p>
               <p>
                 Dropup menu is used to save space on a page. It is relevant if
                 an internet platform has a complex multi-level organization and
                 you need to make the navigation as informative as possible. 5
                 points in a row is no use, so instead, hovering over the item
-                makes the sub-items drop from it.{" "}
+                makes the sub-items drop from it.
               </p>
               <p>
                 Curtain Menu is a full screen menu with a few smooth
@@ -514,7 +543,7 @@ function Notes() {
                   <li>
                     Meta tags are tags that supply additional information about
                     the website page to the search systems. Meta tags are placed
-                    between <head> </head>
+                    between head open and close tag.
                   </li>
                   <li>Adding favicon</li>
                   <li>
@@ -645,8 +674,8 @@ function Notes() {
                 </ul>
               </div>
               <p>
-                Temporal Dead Zone: a behaviour that occurs with variables
-                declared using let and const keywords. It is a behaviour where
+                Temporal Dead Zone: a behavior that occurs with variables
+                declared using let and const keywords. It is a behavior where
                 we try to access a variable before it is initialized.
               </p>
             </Accordion.Body>
@@ -1387,7 +1416,49 @@ function Notes() {
           </Accordion.Item>
           <Accordion.Item eventKey="6">
             <Accordion.Header>Work with API</Accordion.Header>
-            <Accordion.Body className="notes__section"></Accordion.Body>
+            <Accordion.Body className="notes__section">
+              <p>
+                Working with APIs in JavaScript involves making HTTP requests to
+                retrieve or send data to a server.{" "}
+              </p>
+              <ul>
+                <li>
+                  Using fetch API: the fetch function is a modern, promise-based
+                  way to make network requests. It supports all HTTP methods
+                  like GET, POST, PUT, DELETE, etc.
+                </li>
+                <li>
+                  Using XMLHttpRequest: this is an older way to make network
+                  requests, providing more control but with more complexity.
+                </li>
+
+                <li>
+                  Using axios: axios is a popular third-party library for making
+                  HTTP requests, offering a cleaner syntax and additional
+                  features.
+                </li>
+              </ul>
+
+              <li>
+                Handling asynchronous operations: Use async and await to handle
+                asynchronous operations more cleanly.
+              </li>
+              <li>
+                Working with JSON: APIs often send and receive data in JSON
+                format. Use JSON.stringify to send JSON data and response.json()
+                to parse received JSON data.
+              </li>
+              <li>
+                Handling CORS (Cross-Origin Resource Sharing): when working with
+                APIs from a different origin, ensure the server supports CORS.
+                You might need to set the Access-Control-Allow-Origin header on
+                the server.
+              </li>
+              <li>
+                Error handling: always handle errors to ensure the application
+                can gracefully manage failed network requests.
+              </li>
+            </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="7">
             <Accordion.Header>Web storage</Accordion.Header>
