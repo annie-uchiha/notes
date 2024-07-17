@@ -8,6 +8,7 @@ import eventLoopsEvents from "../components/event-loop-vs-events.png";
 import routerSetUp from "../components/react-router-setup.png"
 import routerComponents from "../components/react-router-components.png"
 import lifecycleImg from "../components/lifecycle-methods.png"
+import stateAndProp from "../components/react-state-and-prop.png"
 
 function Notes() {
   return (
@@ -1625,6 +1626,11 @@ function Notes() {
                 and passed from parent to child components, state is local to
                 the component and can be updated directly within the component.
               </h6>
+              <img>
+              className="notes__img"
+              alt="state-and-prop-img"
+              src={stateAndProp}
+              </img>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
@@ -1693,11 +1699,18 @@ function Notes() {
                 <li>useState and useReducer can manage state updated</li>
                 <li>useContext - context updates</li>
               </ul>
+              <p>React components go through several lifecycle phases from creation to deletion, and React provides lifecycle methods that allow developers to execute code at specific points in a component's lifecycle. Managed using hooks.</p>
               <img
                 className="notes__img"
                 alt="lifecycle-img"
                 src={lifecycleImg}
               ></img>
+              <p>Mounting: componentDidMount() - called once after the component is rendered. Used to perform side effects such as data fetching.</p>
+              <p>Updating - componentDidUpdate(prevProps, prevState): called after an update (state or props change). Used to act on changes such as updating the DOM or making API calls based on prop changes.</p>
+              <p>Unmounting - componentWillUnmount() - called before the component is removed from the DOM. Used to clean up resources like event listeners or timers.</p>
+              <p>useEffect(() => {...}, []) - after the component mounts, the empty dependency array ensures it runs only once.</p>
+              <p>useEffect(() => {...}) - the effect runs after every render (component updates). Add dependencies to the array to control when it runs.</p>
+              <p>useEffect(() => {...};}, []): - the cleanup function runs before the component unmounts.</p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
