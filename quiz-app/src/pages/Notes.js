@@ -857,17 +857,17 @@ function Notes() {
                 </li>
                 <li>
                   Constructor method;
-                  <img
-                    className="notes__img"
-                    alt="factory-vs-constructor"
-                    src={factoryVsConstructor}
-                  />
                   <p>
                     The factory function is a pattern for creating objects.
                     Regular functions that return new objects. Simplicity. No
                     new keywords. Encapsulation: they can encapsulate private
                     data and functions using closure.
                   </p>
+                  <img
+                    className="notes__img"
+                    alt="factory-vs-constructor"
+                    src={factoryVsConstructor}
+                  />
                   <p>
                     *Encapsulation: bundling of data (variables) and methods
                     (functions) that operate on the data into a single unit or
