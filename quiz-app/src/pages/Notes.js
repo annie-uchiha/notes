@@ -5,10 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
 import eventLoopsEvents from "../components/event-loop-vs-events.png";
-import routerSetUp from "../components/react-router-setup.png"
-import routerComponents from "../components/react-router-components.png"
-import lifecycleImg from "../components/lifecycle-methods.png"
-import stateAndProp from "../components/react-state-and-prop.png"
+import routerSetUp from "../components/react-router-setup.png";
+import routerComponents from "../components/react-router-components.png";
+import lifecycleImg from "../components/lifecycle-methods.png";
+import stateAndProp from "../components/react-state-and-prop.png";
 
 function Notes() {
   return (
@@ -341,19 +341,33 @@ function Notes() {
                 visually appealing changes to styles.
               </p>
               <ul>
-                <li>Animation — a gradual change of visual parameters of an object.</li>
-                <li> Transition — an animation which occurs between the two states of
-                an object (starting state and end-state). It may be a change of
-                size, transparency, position etc. There’s always a start point
-                and an end point.</li>
-                <li>CSS animation — an animation which does not
-                necessarily include the start and end stages, or requires some
-                more careful frame-by-frame setup.</li>
-                <li> Key frame — a property of an
-                element (transparency, color, position etc.) which has to be
-                applied to the element at a certain moment of time.</li>
-                <li> Time function for key frames — a time function which is to be used
-                when moving the animation to the next key frame.</li>
+                <li>
+                  Animation — a gradual change of visual parameters of an
+                  object.
+                </li>
+                <li>
+                  {" "}
+                  Transition — an animation which occurs between the two states
+                  of an object (starting state and end-state). It may be a
+                  change of size, transparency, position etc. There’s always a
+                  start point and an end point.
+                </li>
+                <li>
+                  CSS animation — an animation which does not necessarily
+                  include the start and end stages, or requires some more
+                  careful frame-by-frame setup.
+                </li>
+                <li>
+                  {" "}
+                  Key frame — a property of an element (transparency, color,
+                  position etc.) which has to be applied to the element at a
+                  certain moment of time.
+                </li>
+                <li>
+                  {" "}
+                  Time function for key frames — a time function which is to be
+                  used when moving the animation to the next key frame.
+                </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
@@ -681,8 +695,8 @@ function Notes() {
               </div>
               <p>
                 Temporal Dead Zone: a behavior that occurs with variables
-                declared using let and const keywords. It is a behavior where
-                we try to access a variable before it is initialized.
+                declared using let and const keywords. It is a behavior where we
+                try to access a variable before it is initialized.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -1397,9 +1411,16 @@ function Notes() {
             <Accordion.Header>jQuery</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-                JS library that focuses on the interaction of JS, HTML and CSS,
-                calling any DOM element and manipulating it.
+              jQuery is a fast, small, and feature-rich JavaScript library. It simplifies tasks like HTML document traversal and manipulation, event handling, animation, and Ajax with an easy-to-use API that works across a multitude of browsers.
               </p>
+              <ul>
+                <li>Cross-browser Compatibility: jQuery abstracted away the differences in how browsers handled JavaScript, allowing developers to write code that worked consistently across all major browsers.</li>
+                <li>Simplified DOM Manipulation: It made tasks like selecting elements, modifying content, and handling events much easier and more concise.</li>
+                <li>Reduced Code Complexity: Common tasks could be done with fewer lines of code compared to vanilla JavaScript.</li>
+                <li>Plugins and Extensions: A large community contributed numerous plugins, extending its functionality and enabling developers to implement complex features quickly.</li>
+                <li>Ajax Simplification: jQuery streamlined the process of making asynchronous HTTP requests, making dynamic content updates more straightforward.</li>
+              </ul>
+              <p>jQuery empowered developers to create more interactive, responsive, and cross-browser compatible web applications efficiently.</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
@@ -1425,7 +1446,7 @@ function Notes() {
             <Accordion.Body className="notes__section">
               <p>
                 Working with APIs in JavaScript involves making HTTP requests to
-                retrieve or send data to a server.{" "}
+                retrieve or send data to a server.
               </p>
               <ul>
                 <li>
@@ -1536,12 +1557,28 @@ function Notes() {
             <Accordion.Header>What is React.js?</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>JavaScript library.</p>
-              <p>Component-based application. Uses the virtual DOM. Unidirectional data flow. Reusable components. Seamless Update.</p>
-              <p>In React, Webpack is build-in - you don't need to set it up additionally or use Gulp or any other alternatives - npm run build will build the application.</p>
+              <p>
+                Component-based application. Uses the virtual DOM.
+                Unidirectional data flow. Reusable components. Seamless Update.
+              </p>
+              <p>
+                In React, Webpack is build-in - you don't need to set it up
+                additionally or use Gulp or any other alternatives - npm run
+                build will build the application.
+              </p>
               <p>React runs in local host 3000</p>
-              <p>React uses functions while Angular uses classes. With the introduction of hooks it made more sense to use functions instead of classes to make the code simple and readable, reducing errors.</p>
+              <p>
+                React uses functions while Angular uses classes. With the
+                introduction of hooks it made more sense to use functions
+                instead of classes to make the code simple and readable,
+                reducing errors.
+              </p>
               <p>On each save, it compiles the code and checks for errors.</p>
-              <p>Popular libraries used in React: React Bootstrap, And Design, Material UI, Chakra UI, React Router, React Motion, Fluent UI, Maintain, Redux, etc.</p>
+              <p>
+                Popular libraries used in React: React Bootstrap, And Design,
+                Material UI, Chakra UI, React Router, React Motion, Fluent UI,
+                Maintain, Redux, etc.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -1553,8 +1590,14 @@ function Notes() {
               </p>
               <p>Difference between HTML and JSX:</p>
               <ul>
-                <li>when using classes in CSS in HTML we use class = name; while in JSX we use className = name;</li>
-                <li>the files are not incapsulated - they are available everywhere in the code;</li>
+                <li>
+                  when using classes in CSS in HTML we use class = name; while
+                  in JSX we use className = name;
+                </li>
+                <li>
+                  the files are not incapsulated - they are available everywhere
+                  in the code;
+                </li>
                 <li>does not need a converter for SCSS files.</li>
               </ul>
             </Accordion.Body>
@@ -1617,11 +1660,11 @@ function Notes() {
                 alt="router-setup-img"
                 src={routerSetUp}
               ></img>
-              <img 
-              className="notes__img"
-              alt="router-setup-img"
-              src={routerComponents}>
-              </img>
+              <img
+                className="notes__img"
+                alt="router-setup-img"
+                src={routerComponents}
+              ></img>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
@@ -1638,9 +1681,8 @@ function Notes() {
                 the component and can be updated directly within the component.
               </h6>
               <img>
-              className="notes__img"
-              alt="state-and-prop-img"
-              src={stateAndProp}
+                className="notes__img" alt="state-and-prop-img" src=
+                {stateAndProp}
               </img>
             </Accordion.Body>
           </Accordion.Item>
@@ -1684,7 +1726,10 @@ function Notes() {
                 the setState method. It can also be achieved in functional
                 components using hooks.
               </h6>
-              <p>Which one to use: depending on do you need to manage state or just render based on props.</p>
+              <p>
+                Which one to use: depending on do you need to manage state or
+                just render based on props.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
@@ -1710,18 +1755,46 @@ function Notes() {
                 <li>useState and useReducer can manage state updated</li>
                 <li>useContext - context updates</li>
               </ul>
-              <p>React components go through several lifecycle phases from creation to deletion, and React provides lifecycle methods that allow developers to execute code at specific points in a component's lifecycle. Managed using hooks.</p>
+              <p>
+                React components go through several lifecycle phases from
+                creation to deletion, and React provides lifecycle methods that
+                allow developers to execute code at specific points in a
+                component's lifecycle. Managed using hooks.
+              </p>
               <img
                 className="notes__img"
                 alt="lifecycle-img"
                 src={lifecycleImg}
               ></img>
-              <p>Mounting: componentDidMount() - called once after the component is rendered. Used to perform side effects such as data fetching.</p>
-              <p>Updating - componentDidUpdate(prevProps, prevState): called after an update (state or props change). Used to act on changes such as updating the DOM or making API calls based on prop changes.</p>
-              <p>Unmounting - componentWillUnmount() - called before the component is removed from the DOM. Used to clean up resources like event listeners or timers.</p>
-              <p>useEffect(() function curly brackets with the actual function, []) - after the component mounts, the empty dependency array ensures it runs only once.</p>
-              <p>useEffect(() function curly brackets with the actual function) - the effect runs after every render (component updates). Add dependencies to the array to control when it runs.</p>
-              <p>useEffect(() function curly brackets with the actual function; , []): - the cleanup function runs before the component unmounts.</p>
+              <p>
+                Mounting: componentDidMount() - called once after the component
+                is rendered. Used to perform side effects such as data fetching.
+              </p>
+              <p>
+                Updating - componentDidUpdate(prevProps, prevState): called
+                after an update (state or props change). Used to act on changes
+                such as updating the DOM or making API calls based on prop
+                changes.
+              </p>
+              <p>
+                Unmounting - componentWillUnmount() - called before the
+                component is removed from the DOM. Used to clean up resources
+                like event listeners or timers.
+              </p>
+              <p>
+                useEffect(() function curly brackets with the actual function,
+                []) - after the component mounts, the empty dependency array
+                ensures it runs only once.
+              </p>
+              <p>
+                useEffect(() function curly brackets with the actual function) -
+                the effect runs after every render (component updates). Add
+                dependencies to the array to control when it runs.
+              </p>
+              <p>
+                useEffect(() function curly brackets with the actual function; ,
+                []): - the cleanup function runs before the component unmounts.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
