@@ -923,7 +923,7 @@ function Notes() {
                     <li>
                       *super - keyword for calling the constructor of the parent
                       class and to access methods of the parent class. Must be
-                      called before this.{" "}
+                      called before this.
                     </li>
                     <li>
                       Apply - method similar to call but takes arguments as an
