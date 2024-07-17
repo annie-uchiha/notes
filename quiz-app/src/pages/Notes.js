@@ -13,7 +13,7 @@ import objectImg from "../components/javascript-object.png";
 import classKeyword from "../components/class-and-new-keyword.png";
 import factoryVsConstructor from "../components/factory-vs-constructor-function.png";
 import staticMethods from "../components/static-properties-and-methods.png";
-import staticNotes from "../components/static-method-notes.png";
+import staticNotes from "../components/static-method-notes.jpg";
 import callApplyBind from "../components/apply-call-and-bind.png";
 import polymorphism from "../components/polymorphism.png";
 import abstraction from "../components/abstraction.png";
