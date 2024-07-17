@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
 import eventLoopsEvents from "../components/event-loop-vs-events.png";
+import routerSetUp from "../components/react-router-setup.png";
+import routerComponents from "../components/react-router-components.png";
+import lifecycleImg from "../components/lifecycle-methods.png";
 
 function Notes() {
   return (
@@ -937,7 +940,6 @@ function Notes() {
                 symbol) and each value can be any data type, including other
                 objects.
               </p>
-              <img className="notes__img" alt="object-img" src={objectImg} />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
@@ -1675,6 +1677,16 @@ function Notes() {
               </h6>
               <p>1. npm install react-router-dom</p>
               <p>2. setting up routes - BrowserRouter, Route, Switch</p>
+              <img
+                className="notes__img"
+                alt="router-setup-img"
+                src={routerSetUp}
+              />
+              <img
+                className="notes__img"
+                alt="router-component-img"
+                src={routerComponents}
+              />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
@@ -1767,7 +1779,11 @@ function Notes() {
                 allow developers to execute code at specific points in a
                 component's lifecycle. Managed using hooks.
               </p>
-
+              <img
+                className="notes__img"
+                alt="lifecycle-img"
+                src={lifecycleImg}
+              />
               <p>
                 Mounting: componentDidMount() - called once after the component
                 is rendered. Used to perform side effects such as data fetching.
