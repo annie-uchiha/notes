@@ -11,6 +11,8 @@ import lifecycleImg from "../components/lifecycle-methods.png";
 import stateAndProp from "../components/react-state-and-prop.png";
 import objectImg from "../components/javascript-object.png";
 import classKeyword from "../components/class-and-new-keyword.png";
+import factoryVsConstructor from "../components/factory-vs-constructor-function.png"
+import staticMethods from "../components/static-properties-and-methods.png";
 
 function Notes() {
   return (
@@ -844,10 +846,32 @@ function Notes() {
                   alt="class-keyword-img"
                   src={classKeyword}/>
                 </li>
-                <li>Constructor method;</li>
+                <li>Constructor method;
+                  <img
+                  className="notes__img"
+                  alt="factory-vs-constructor"
+                  arc={factoryVsConstructor}/>
+                  <p>The factory function is a pattern for creating objects.
+                    Regular functions that return new objects. Simplicity. No new keywords.
+                    Encapsulation: they can encapsulate private data and functions using closure.
+                  </p>
+                  <p>Constructor function: common way to create objects that share the same properties
+                    and methods. They use the new keyword to create an instance of an object.
+                    Function definition: define a function where this refers to the object that'll be created.
+                    Prototype: properties and methods defined on the constructor's prototype are shared across all instances.
+                    To avoid duplicating methods for every instance, you can add methods to the constructor functions' prototype.
+                  </p>
+                </li>
                 <li>Methods;</li>
                 <li>Inheritance;</li>
-                <li>Static methods and static properties;</li>
+                <li>Static methods and static properties - belong to the constructor function (or class) itself,
+                  rather than to the instances. They can be accessed directly on the constructor or class, without
+                  needing to create an instance;
+                  <img
+                  className="notes__img"
+                  alt="static-methods-and-properties-img"
+                  src={staticMethods}/>
+                  </li>
                 <li>Getters and setters.</li>
               </ul>
             </Accordion.Body>
