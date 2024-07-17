@@ -850,7 +850,7 @@ function Notes() {
                   <img
                   className="notes__img"
                   alt="factory-vs-constructor"
-                  arc={factoryVsConstructor}/>
+                  src={factoryVsConstructor}/>
                   <p>The factory function is a pattern for creating objects.
                     Regular functions that return new objects. Simplicity. No new keywords.
                     Encapsulation: they can encapsulate private data and functions using closure.
