@@ -11,12 +11,13 @@ import lifecycleImg from "../components/lifecycle-methods.png";
 import stateAndProp from "../components/react-state-and-prop.png";
 import objectImg from "../components/javascript-object.png";
 import classKeyword from "../components/class-and-new-keyword.png";
-import factoryVsConstructor from "../components/factory-vs-constructor-function.png"
+import factoryVsConstructor from "../components/factory-vs-constructor-function.png";
 import staticMethods from "../components/static-properties-and-methods.png";
-import staticNotes from "../components/static-method-notes.png"
-import callApplyBind from "../components/apply-call-and-bind.png"
-import polymorphism from "../components/polymorphism.png"
-import abstraction from "../components/abstraction.png"
+import staticNotes from "../components/static-method-notes.png";
+import callApplyBind from "../components/apply-call-and-bind.png";
+import polymorphism from "../components/polymorphism.png";
+import abstraction from "../components/abstraction.png";
+import inheritance from "../components/inheritance.png";
 
 function Notes() {
   return (
@@ -843,91 +844,161 @@ function Notes() {
                 methods, providing a blueprint for creating multiple objects
                 with similar characteristics.
               </p>
-              <ul>Key components of a class:
-                <li>Class declaration - using class keyword followed by a class name;
+              <ul>
+                Key components of a class:
+                <li>
+                  Class declaration - using class keyword followed by a class
+                  name;
                   <img
-                  className="notes__img"
-                  alt="class-keyword-img"
-                  src={classKeyword}/>
+                    className="notes__img"
+                    alt="class-keyword-img"
+                    src={classKeyword}
+                  />
                 </li>
-                <li>Constructor method;
+                <li>
+                  Constructor method;
                   <img
-                  className="notes__img"
-                  alt="factory-vs-constructor"
-                  src={factoryVsConstructor}/>
-                  <p>The factory function is a pattern for creating objects.
-                    Regular functions that return new objects. Simplicity. No new keywords.
-                    Encapsulation: they can encapsulate private data and functions using closure.
+                    className="notes__img"
+                    alt="factory-vs-constructor"
+                    src={factoryVsConstructor}
+                  />
+                  <p>
+                    The factory function is a pattern for creating objects.
+                    Regular functions that return new objects. Simplicity. No
+                    new keywords. Encapsulation: they can encapsulate private
+                    data and functions using closure.
                   </p>
-                  <p>*Encapsulation: bundling of data (variables) and methods (functions) that operate on the data into
-                    a single unit or class. It also involves restricting direct access to some of an object's components
-                    which means that the internal representation of an object is hidden from the outside.
-                    This is typically achieved through access modifiers like private and protected. Can be implemented
-                    using closures, symbols and recently - private class yields.
+                  <p>
+                    *Encapsulation: bundling of data (variables) and methods
+                    (functions) that operate on the data into a single unit or
+                    class. It also involves restricting direct access to some of
+                    an object's components which means that the internal
+                    representation of an object is hidden from the outside. This
+                    is typically achieved through access modifiers like private
+                    and protected. Can be implemented using closures, symbols
+                    and recently - private class yields.
                   </p>
-                  <p>*Abstraction - concept of hiding the complex implementation details of a system and exposing
-                    only the necessary parts to the user. This allows for simplifying complex systems by modeling classes
-                    appropriate to the problem domain, emphasizing what an object does rather than how it does it.
-                    Achieved through classes and methods, as well as by defining interfaces and abstract classes.
+                  <p>
+                    *Abstraction - concept of hiding the complex implementation
+                    details of a system and exposing only the necessary parts to
+                    the user. This allows for simplifying complex systems by
+                    modeling classes appropriate to the problem domain,
+                    emphasizing what an object does rather than how it does it.
+                    Achieved through classes and methods, as well as by defining
+                    interfaces and abstract classes.
                   </p>
                   <img
-                  className="notes__img"
-                  alt="abstraction-img"
-                  src={abstraction}/>
-                  <p>Constructor function: common way to create objects that share the same properties
-                    and methods. They use the new keyword to create an instance of an object.
-                    Function definition: define a function where this refers to the object that'll be created.
-                    Prototype: properties and methods defined on the constructor's prototype are shared across all instances.
-                    To avoid duplicating methods for every instance, you can add methods to the constructor functions' prototype.
+                    className="notes__img"
+                    alt="abstraction-img"
+                    src={abstraction}
+                  />
+                  <p>
+                    Constructor function: common way to create objects that
+                    share the same properties and methods. They use the new
+                    keyword to create an instance of an object. Function
+                    definition: define a function where this refers to the
+                    object that'll be created. Prototype: properties and methods
+                    defined on the constructor's prototype are shared across all
+                    instances. To avoid duplicating methods for every instance,
+                    you can add methods to the constructor functions' prototype.
                   </p>
                 </li>
-                <li>Methods;
-                  <p>Apply, call and bind - useful for managing the context (this) within methods, as well as for borrowing
-                    methods from other classes or objects.
+                <li>
+                  Methods;
+                  <p>
+                    Apply, call and bind - useful for managing the context
+                    (this) within methods, as well as for borrowing methods from
+                    other classes or objects.
                   </p>
                   <ul>
-                    <li>Call - invoke a method of a class with a specific this value and arguments.</li>
-                    <li>*extends - keyword to create class that is a child of another class.
-                      The child class inherits all the properties and methods of the parent class.
+                    <li>
+                      Call - invoke a method of a class with a specific this
+                      value and arguments.
                     </li>
-                    <li>*super - keyword for calling the constructor of the parent class and to access methods of the parent class. Must be called before this. </li>
-                    <li>Apply - method similar to call but takes arguments as an array.</li>
-                    <li>Bind - method, creates a new function that when called has its this value set to the provided value.
-                      Useful for event handlers or callbacks where you want to ensure that this refers to the class instance.
+                    <li>
+                      *extends - keyword to create class that is a child of
+                      another class. The child class inherits all the properties
+                      and methods of the parent class.
+                    </li>
+                    <li>
+                      *super - keyword for calling the constructor of the parent
+                      class and to access methods of the parent class. Must be
+                      called before this.{" "}
+                    </li>
+                    <li>
+                      Apply - method similar to call but takes arguments as an
+                      array.
+                    </li>
+                    <li>
+                      Bind - method, creates a new function that when called has
+                      its this value set to the provided value. Useful for event
+                      handlers or callbacks where you want to ensure that this
+                      refers to the class instance.
                     </li>
                   </ul>
-                  <p>Combining apply, call and bind helps setup a dynamic context or partial application.</p>
-                  <img
-                  className="notes__img"
-                  alt="call-apply-bind-img"
-                  src={callApplyBind}/>
-                </li>
-                <li>Inheritance - allows a class (called a subclass or derived class) to inherit properties and methods
-                  from another class (called superclass or base class). Implemented by the extends and super keywords;</li>
-                <li>Static methods and static properties - belong to the constructor function (or class) itself,
-                  rather than to the instances. They can be accessed directly on the constructor or class, without
-                  needing to create an instance;
-                  <img
-                  className="notes__img"
-                  alt="static-notes"
-                  src={staticNotes}/>
-                  <img
-                  className="notes__img"
-                  alt="static-methods-and-properties-img"
-                  src={staticMethods}/>
-                  <p>Static properties: used to store data rather than functions. Properties of the constructor function or class itself. Used also to store
-                    const or configuration values that are shared across all instances.
+                  <p>
+                    Combining apply, call and bind helps setup a dynamic context
+                    or partial application.
                   </p>
-                  <p>Static methods are usd for utility functions that don't require any instance data. They cannot access instance properties or methods directly.</p>
-                  <p>Static methods and properties are accessed directly on the class or constructor, not on instances.</p>
-                  </li>
-                <li>Polymorphism - inheritance facilities polymorphism where a subclass can be treated as an instance of its superclass. Useful for generic code that can work with objects of multiple types.
                   <img
-                  className="notes__img"
-                  alt="polymorphism-img"
-                  src={polymorphism}/>
+                    className="notes__img"
+                    alt="call-apply-bind-img"
+                    src={callApplyBind}
+                  />
                 </li>
-
+                <li>
+                  Inheritance - allows a class (called a subclass or derived
+                  class) to inherit properties and methods from another class
+                  (called superclass or base class). Implemented by the extends
+                  and super keywords;
+                  <img
+                    className="notes__img"
+                    alt="inheritance-img"
+                    src={inheritance}
+                  />
+                </li>
+                <li>
+                  Static methods and static properties - belong to the
+                  constructor function (or class) itself, rather than to the
+                  instances. They can be accessed directly on the constructor or
+                  class, without needing to create an instance;
+                  <img
+                    className="notes__img"
+                    alt="static-notes"
+                    src={staticNotes}
+                  />
+                  <img
+                    className="notes__img"
+                    alt="static-methods-and-properties-img"
+                    src={staticMethods}
+                  />
+                  <p>
+                    Static properties: used to store data rather than functions.
+                    Properties of the constructor function or class itself. Used
+                    also to store const or configuration values that are shared
+                    across all instances.
+                  </p>
+                  <p>
+                    Static methods are usd for utility functions that don't
+                    require any instance data. They cannot access instance
+                    properties or methods directly.
+                  </p>
+                  <p>
+                    Static methods and properties are accessed directly on the
+                    class or constructor, not on instances.
+                  </p>
+                </li>
+                <li>
+                  Polymorphism - inheritance facilities polymorphism where a
+                  subclass can be treated as an instance of its superclass.
+                  Useful for generic code that can work with objects of multiple
+                  types.
+                  <img
+                    className="notes__img"
+                    alt="polymorphism-img"
+                    src={polymorphism}
+                  />
+                </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
