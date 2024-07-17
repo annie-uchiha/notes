@@ -10,6 +10,7 @@ import routerComponents from "../components/react-router-components.png";
 import lifecycleImg from "../components/lifecycle-methods.png";
 import stateAndProp from "../components/react-state-and-prop.png";
 import objectImg from "../components/javascript-object.png";
+import classKeyword from "../components/class-and-new-keyword.png";
 
 function Notes() {
   return (
@@ -836,6 +837,19 @@ function Notes() {
                 methods, providing a blueprint for creating multiple objects
                 with similar characteristics.
               </p>
+              <ul>Key components of a class:
+                <li>Class declaration - using class keyword followed by a class name;
+                  <img
+                  className="notes__img"
+                  alt="class-keyword-img"
+                  src={classKeyword}/>
+                </li>
+                <li>Constructor method;</li>
+                <li>Methods;</li>
+                <li>Inheritance;</li>
+                <li>Static methods and static properties;</li>
+                <li>Getters and setters.</li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
