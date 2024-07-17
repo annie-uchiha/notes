@@ -8,6 +8,8 @@ import eventLoopsEvents from "../components/event-loop-vs-events.png";
 import routerSetUp from "../components/react-router-setup.png";
 import routerComponents from "../components/react-router-components.png";
 import lifecycleImg from "../components/lifecycle-methods.png";
+import stateAndProp from "../components/react-state-and-prop.png";
+import objectImg from "../components/javascript-object.png";
 
 function Notes() {
   return (
@@ -940,6 +942,7 @@ function Notes() {
                 symbol) and each value can be any data type, including other
                 objects.
               </p>
+              <img className="notes__img" alt="object-img" src={objectImg} />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
@@ -1702,6 +1705,11 @@ function Notes() {
                 and passed from parent to child components, state is local to
                 the component and can be updated directly within the component.
               </h6>
+              <img
+                className="notes__img"
+                alt="state-and-prop-img"
+                src={stateAndProp}
+              />
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
