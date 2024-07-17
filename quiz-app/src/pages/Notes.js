@@ -6,6 +6,7 @@ import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
 import eventLoopsEvents from "../components/event-loop-vs-events.png";
 import routerSetUp from "../components/react-router-setup.png"
+import routerComponents from "../components/react-router-components.png"
 
 function Notes() {
   return (
@@ -1402,7 +1403,7 @@ function Notes() {
           <Accordion.Item eventKey="5">
             <Accordion.Header>AJAX</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <p>Async JavScript and XML</p>
+              <p>Async JavaScript and XML</p>
               <p>
                 Creates dynamic web applications with async requests without
                 reloading the page.
@@ -1602,6 +1603,11 @@ function Notes() {
                 alt="router-setup-img"
                 src={routerSetUp}
               ></img>
+              <img 
+              className="notes__img"
+              alt="router-setup-img"
+              src={routerComponents}>
+              </img>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
