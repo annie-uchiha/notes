@@ -1536,6 +1536,11 @@ function Notes() {
             <Accordion.Header>What is React.js?</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>JavaScript library.</p>
+              <p>Component-based application. Uses the virtual DOM. Unidirectional data flow. Reusable components. Seamless Update.</p>
+              <p>In React, Webpack is build-in - you don't need to set it up additionally or use Gulp or any other alternatives - npm run build will build the application.</p>
+              <p>React runs in local host 3000</p>
+              <p>React uses functions while Angular uses classes. With the introduction of hooks it made more sense to use functions instead of classes to make the code simple and readable, reducing errors.</p>
+              <p>On each save, it compiles the code and checks for errors.</p>
               <p>Popular libraries used in React: React Bootstrap, And Design, Material UI, Chakra UI, React Router, React Motion, Fluent UI, Maintain, Redux, etc.</p>
             </Accordion.Body>
           </Accordion.Item>
@@ -1546,6 +1551,12 @@ function Notes() {
                 JSX stands for JavaScript XML. It is a HTML-like syntax
                 extension for JS used in React.
               </p>
+              <p>Difference between HTML and JSX:</p>
+              <ul>
+                <li>when using classes in CSS in HTML we use class = name; while in JSX we use className = name;</li>
+                <li>the files are not incapsulated - they are available everywhere in the code;</li>
+                <li>does not need a converter for SCSS files.</li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
@@ -1708,9 +1719,9 @@ function Notes() {
               <p>Mounting: componentDidMount() - called once after the component is rendered. Used to perform side effects such as data fetching.</p>
               <p>Updating - componentDidUpdate(prevProps, prevState): called after an update (state or props change). Used to act on changes such as updating the DOM or making API calls based on prop changes.</p>
               <p>Unmounting - componentWillUnmount() - called before the component is removed from the DOM. Used to clean up resources like event listeners or timers.</p>
-              <p>useEffect(() => {...}, []) - after the component mounts, the empty dependency array ensures it runs only once.</p>
-              <p>useEffect(() => {...}) - the effect runs after every render (component updates). Add dependencies to the array to control when it runs.</p>
-              <p>useEffect(() => {...};}, []): - the cleanup function runs before the component unmounts.</p>
+              <p>useEffect(() function curly brackets with the actual function, []) - after the component mounts, the empty dependency array ensures it runs only once.</p>
+              <p>useEffect(() function curly brackets with the actual function) - the effect runs after every render (component updates). Add dependencies to the array to control when it runs.</p>
+              <p>useEffect(() function curly brackets with the actual function; , []): - the cleanup function runs before the component unmounts.</p>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
