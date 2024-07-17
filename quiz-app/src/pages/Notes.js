@@ -9,6 +9,7 @@ import routerSetUp from "../components/react-router-setup.png";
 import routerComponents from "../components/react-router-components.png";
 import lifecycleImg from "../components/lifecycle-methods.png";
 import stateAndProp from "../components/react-state-and-prop.png";
+import objectImg from "../components/javascript-object.png"
 
 function Notes() {
   return (
@@ -346,7 +347,6 @@ function Notes() {
                   object.
                 </li>
                 <li>
-                  {" "}
                   Transition — an animation which occurs between the two states
                   of an object (starting state and end-state). It may be a
                   change of size, transparency, position etc. There’s always a
@@ -358,13 +358,11 @@ function Notes() {
                   careful frame-by-frame setup.
                 </li>
                 <li>
-                  {" "}
                   Key frame — a property of an element (transparency, color,
                   position etc.) which has to be applied to the element at a
                   certain moment of time.
                 </li>
                 <li>
-                  {" "}
                   Time function for key frames — a time function which is to be
                   used when moving the animation to the next key frame.
                 </li>
@@ -556,7 +554,6 @@ function Notes() {
                 engine reads the website address is the determining factor of
                 SEO efficiency.
               </p>
-
               <div>
                 Ways to increase SEO:
                 <ul>
@@ -945,6 +942,11 @@ function Notes() {
                 symbol) and each value can be any data type, including other
                 objects.
               </p>
+              <img
+                className="notes__img"
+                alt="object-img"
+                src={objectImg}
+              ></img>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
@@ -1411,16 +1413,43 @@ function Notes() {
             <Accordion.Header>jQuery</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>
-              jQuery is a fast, small, and feature-rich JavaScript library. It simplifies tasks like HTML document traversal and manipulation, event handling, animation, and Ajax with an easy-to-use API that works across a multitude of browsers.
+                jQuery is a fast, small, and feature-rich JavaScript library. It
+                simplifies tasks like HTML document traversal and manipulation,
+                event handling, animation, and Ajax with an easy-to-use API that
+                works across a multitude of browsers.
               </p>
               <ul>
-                <li>Cross-browser Compatibility: jQuery abstracted away the differences in how browsers handled JavaScript, allowing developers to write code that worked consistently across all major browsers.</li>
-                <li>Simplified DOM Manipulation: It made tasks like selecting elements, modifying content, and handling events much easier and more concise.</li>
-                <li>Reduced Code Complexity: Common tasks could be done with fewer lines of code compared to vanilla JavaScript.</li>
-                <li>Plugins and Extensions: A large community contributed numerous plugins, extending its functionality and enabling developers to implement complex features quickly.</li>
-                <li>Ajax Simplification: jQuery streamlined the process of making asynchronous HTTP requests, making dynamic content updates more straightforward.</li>
+                <li>
+                  Cross-browser Compatibility: jQuery abstracted away the
+                  differences in how browsers handled JavaScript, allowing
+                  developers to write code that worked consistently across all
+                  major browsers.
+                </li>
+                <li>
+                  Simplified DOM Manipulation: It made tasks like selecting
+                  elements, modifying content, and handling events much easier
+                  and more concise.
+                </li>
+                <li>
+                  Reduced Code Complexity: Common tasks could be done with fewer
+                  lines of code compared to vanilla JavaScript.
+                </li>
+                <li>
+                  Plugins and Extensions: A large community contributed numerous
+                  plugins, extending its functionality and enabling developers
+                  to implement complex features quickly.
+                </li>
+                <li>
+                  Ajax Simplification: jQuery streamlined the process of making
+                  asynchronous HTTP requests, making dynamic content updates
+                  more straightforward.
+                </li>
               </ul>
-              <p>jQuery empowered developers to create more interactive, responsive, and cross-browser compatible web applications efficiently.</p>
+              <p>
+                jQuery empowered developers to create more interactive,
+                responsive, and cross-browser compatible web applications
+                efficiently.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
