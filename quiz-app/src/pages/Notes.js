@@ -7,6 +7,7 @@ import cookieStorage from "../components/cookie.local.storage.png";
 import eventLoopsEvents from "../components/event-loop-vs-events.png";
 import routerSetUp from "../components/react-router-setup.png"
 import routerComponents from "../components/react-router-components.png"
+import lifecycleImg from "../components/lifecycle-methods.png"
 
 function Notes() {
   return (
@@ -1534,6 +1535,7 @@ function Notes() {
             <Accordion.Header>What is React.js?</Accordion.Header>
             <Accordion.Body className="notes__section">
               <p>JavaScript library.</p>
+              <p>Popular libraries used in React: React Bootstrap, And Design, Material UI, Chakra UI, React Router, React Motion, Fluent UI, Maintain, Redux, etc.</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -1665,6 +1667,7 @@ function Notes() {
                 the setState method. It can also be achieved in functional
                 components using hooks.
               </h6>
+              <p>Which one to use: depending on do you need to manage state or just render based on props.</p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="8">
@@ -1690,6 +1693,11 @@ function Notes() {
                 <li>useState and useReducer can manage state updated</li>
                 <li>useContext - context updates</li>
               </ul>
+              <img
+                className="notes__img"
+                alt="lifecycle-img"
+                src={lifecycleImg}
+              ></img>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
