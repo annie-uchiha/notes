@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import boxModelImg from "../components/box-model.png";
 import cookieStorage from "../components/cookie.local.storage.png";
 import eventLoopsEvents from "../components/event-loop-vs-events.png";
+import routerSetUp from "../components/react-router-setup.png"
 
 function Notes() {
   return (
@@ -1594,7 +1595,13 @@ function Notes() {
                 and allows the app to be single-page application, meaning it
                 dynamically updated the content without reloading the page.
               </h6>
-              <p></p>
+              <p>1. npm install react-router-dom</p>
+              <p>2. setting up routes - BrowserRouter, Route, Switch</p>
+              <img
+                className="notes__img"
+                alt="router-setup-img"
+                src={routerSetUp}
+              ></img>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5">
