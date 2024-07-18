@@ -1107,6 +1107,49 @@ function Notes() {
                 objects.
               </p>
               <img className="notes__img" alt="object-img" src={objectImg} />
+              <p>this keyword is a special identifier referring to the current execution context. 
+                Its value is determined by how a function is called rather than where it is defined:
+                
+              </p>
+              <p>global context - outside of any function this refers to the global object. In browsers, the global object is window.</p>
+              <p>function context - refers to the object that is calling the function - but it depends on how the function is invoked.</p>
+              <p>Method invocation: this refers to the object that the method is called on.</p>
+              <p>A function within an object is called a method. The method uses the properties in the object.</p>
+              <ul>Objects, arrays and functions are reference values because they don't store reference to the memory location where data is stored:
+                <li>Objects: when you assign an object to a variable, what you are storing in that variable is a reference to the memory location
+                  where the object is stored. So if you assign the same object to multiple variables or pass it as an argument to a function, you're working with the same underlying object.
+                </li>
+                <li>Arrays: also objects, similar behavior. When you assign an array to a variable, you are storing a reference to the memory location where the array is stored.
+                  Like objects, if you assign the same array to multiple variables or pass it as an argument to a function you're working with the same underlying array.
+                </li>
+                <li>Functions: when you define a function, you create an object of type function.</li>
+                <li>Operations that modify objects, arrays, functions affect the underlying data directly. Analogy: ID's in HTML - changes made to one elements' styling or attributes using its ID will affect all elements
+                  with the same ID, just as changes made to an object, array or function using one reference will affect all references to that object, array or function.
+                </li>
+                <li>Most times objects are declared with a const because even if we do make a change it is to a property within the object not the object itself.</li>
+                <li>Primitives can not be changed while objects can be.</li>
+                <li>You can access property of object using dot notation (object.property) or bracket notation (object['property']) - more useful if property 
+                  name is dynamic or contains special characters.
+                </li>
+                <li>Adding and modifying properties - simply assign a value to a new or existing property.</li>
+                <li>Object literals: create objects directly in the code, consists of coma-separated key-value pairs enclosed in curly braces.</li>
+                <li>Iterations: you can loop through the properties of an object using for ... in loop or object.keys(), object.values(), or object.entries() methods</li>
+              </ul>
+              <ul>Built-in methods:
+              <li>object.keys() - returns an array of the objects own enumerable property names (keys).</li>
+              <li>object.values() - returns an array of the objects own enumerable values.</li>
+              <li>object.entries() - returns an array of the objects own enumerable properties (keys; values).</li>
+              <li>object.assign() - copy values from the objects own properties to the target object.</li>
+              <li>object.freeze() - freezes an object and prevents it from being added a new property, existing properties cannot be removed and changed.</li>
+              <li>object.seal(obj) - new properties cannot be added, existing cannot be removed but they can be modified.</li>
+              <li>object.create(proto,[propertiesObject]) - creates a new object with specified prototyped object and optional properties. Prototypal inheritance.</li>
+              <li>object.hasOwnProperty(prop) - returns a boolean indicating wether an object has a specified property as its own (not inherited). </li>
+              </ul>
+              <p>JS objects are dynamic, meaning you can add, modify or delete properties and methods on runtime. This allows for powerful and flexible programming pattern.</p>
+              <p>*JSON: JavaScript Object Natation - lightweight data interchange format. It transmits data between a server and a web application, used for configuration of files and data storage.
+                JSON syntax consists of key-value pairs, where keys are string and values can be strings, numbers, arrays, objects, booleans or null. It allows nesting.
+                It can be parsed into objects using JSON.parse() method and JS objects can be converted tp JSON strings via JSON.stringify(). Used for data transmission, data storage API's.
+              </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="14">
@@ -1466,48 +1509,118 @@ function Notes() {
           <Accordion.Item eventKey="21">
             <Accordion.Header>Functions</Accordion.Header>
             <Accordion.Body className="notes__section">
-              <h6>Functions are blocks of reusable code that perform a specific task.</h6>
+              <h6>
+                Functions are blocks of reusable code that perform a specific
+                task.
+              </h6>
               <p>
-               Arguments - added in brackets; allow us to call the function but change the strings inside just how in SCSS we use _mixins 
-               but we can change things up without changing the main mixin. Arguments are the values that a function needs to wrk with.
+                Arguments - added in brackets; allow us to call the function but
+                change the strings inside just how in SCSS we use _mixins but we
+                can change things up without changing the main mixin. Arguments
+                are the values that a function needs to wrk with.
               </p>
-              <ul>Times when we might need to write the return statement:
-                <li>Returning a value: if the function is suppose to produce a result or a value that needs to be used elsewhere in the code.</li>
-                <li>Early termination: if the function needs to terminate early based on certain conditions, a return statement can be used to exit the function prematurely.</li>
-                <li>Explicit Control Flow: the return statement at the end of the function can make the control flow more explicit and easier to understand.</li>
-              </ul>
-              <ul>Times when it may not be needed:
-                <li>Void function: if the function does not need to return a value, you can omit it all together, or explicitly return undefined.</li>
-                <li>Side Effects Only: if the function performs some actions or side effects (modifying a global variable or logging to the console) but does not need to return any value.</li>
-                <li>Recursive Functions: each recursive call may have its own return statement, but it's not mandatory to have a return statement at the end of the function itself.</li>
-              </ul>
-              <ul>Scopes - define the accessibility and visibility of variables and functions within your code. Two types:
-                <li>Global: variables and functions declared outside of any function or block. They can be accessed from anywhere within the script, including 
-                  inside functions and blocks.
+              <ul>
+                Times when we might need to write the return statement:
+                <li>
+                  Returning a value: if the function is suppose to produce a
+                  result or a value that needs to be used elsewhere in the code.
                 </li>
-                <li>Local: variables declared inside of functions or block. They are only accessible within the function or block.</li>
-                <li>*Variables declared by let and const are block-scoped - they are only accessible within the block they are defined (inside loops or conditional statements).</li>
-                <li>*Scopes are similar to nesting in SCSS: a concept of defining a context or container within which certain variables or functions are accessible.
-                  In SCSS nesting helps organize and maintain CSS styles, making them easy to read. Scopes serve the purpose of managing variable visibility and avoiding name conflicts,
-                  contributing to the overall structure and functionality of the code.
+                <li>
+                  Early termination: if the function needs to terminate early
+                  based on certain conditions, a return statement can be used to
+                  exit the function prematurely.
+                </li>
+                <li>
+                  Explicit Control Flow: the return statement at the end of the
+                  function can make the control flow more explicit and easier to
+                  understand.
                 </li>
               </ul>
-              <ul>Modules:
-                <li>Modules allow for encapsulating code into separate files, making it easier to manage and reuse functionality across different part of an application.
-                  Mixins, in this context, refer to reusable code snippets or functions that can be imported from modules and "mixed in" to other objects or classes
-                  to extend their functionality.
+              <ul>
+                Times when it may not be needed:
+                <li>
+                  Void function: if the function does not need to return a
+                  value, you can omit it all together, or explicitly return
+                  undefined.
+                </li>
+                <li>
+                  Side Effects Only: if the function performs some actions or
+                  side effects (modifying a global variable or logging to the
+                  console) but does not need to return any value.
+                </li>
+                <li>
+                  Recursive Functions: each recursive call may have its own
+                  return statement, but it's not mandatory to have a return
+                  statement at the end of the function itself.
+                </li>
+              </ul>
+              <ul>
+                Scopes - define the accessibility and visibility of variables
+                and functions within your code. Two types:
+                <li>
+                  Global: variables and functions declared outside of any
+                  function or block. They can be accessed from anywhere within
+                  the script, including inside functions and blocks.
+                </li>
+                <li>
+                  Local: variables declared inside of functions or block. They
+                  are only accessible within the function or block.
+                </li>
+                <li>
+                  *Variables declared by let and const are block-scoped - they
+                  are only accessible within the block they are defined (inside
+                  loops or conditional statements).
+                </li>
+                <li>
+                  *Scopes are similar to nesting in SCSS: a concept of defining
+                  a context or container within which certain variables or
+                  functions are accessible. In SCSS nesting helps organize and
+                  maintain CSS styles, making them easy to read. Scopes serve
+                  the purpose of managing variable visibility and avoiding name
+                  conflicts, contributing to the overall structure and
+                  functionality of the code.
+                </li>
+              </ul>
+              <ul>
+                Modules:
+                <li>
+                  Modules allow for encapsulating code into separate files,
+                  making it easier to manage and reuse functionality across
+                  different part of an application. Mixins, in this context,
+                  refer to reusable code snippets or functions that can be
+                  imported from modules and "mixed in" to other objects or
+                  classes to extend their functionality.
                 </li>
                 <li>Encapsulation: avoid naming conflicts.</li>
-                <li>Exporting: variables, functions, classes, objects using export keyword.</li>
-                <li>Importing: the exported items become available for other modules using import keyword.</li>
-                <li>*Just like _mixins, there could be a separate js file linked to the HTML, that holds all variables: 
-                  script src="variables.js" type="module"/script
+                <li>
+                  Exporting: variables, functions, classes, objects using export
+                  keyword.
+                </li>
+                <li>
+                  Importing: the exported items become available for other
+                  modules using import keyword.
+                </li>
+                <li>
+                  *Just like _mixins, there could be a separate js file linked
+                  to the HTML, that holds all variables: script
+                  src="variables.js" type="module"/script
                 </li>
                 <li>Default exports: primary thing exported from a module.</li>
                 <li>Named exports: export several items from one module.</li>
-                <li>Static Analysis: dependencies are resolved at compile time not runtime.</li>
-                <li>Browser support: modern browsers and Node.js support JS modules but older browsers might need transpilation using tools like Babel to convert module syntax to a format they know. </li>
-                <li>Module Formats: common JS, AMD, ESM, ES or ESM is the standard format - simplicity and native browser support.</li>
+                <li>
+                  Static Analysis: dependencies are resolved at compile time not
+                  runtime.
+                </li>
+                <li>
+                  Browser support: modern browsers and Node.js support JS
+                  modules but older browsers might need transpilation using
+                  tools like Babel to convert module syntax to a format they
+                  know.{" "}
+                </li>
+                <li>
+                  Module Formats: common JS, AMD, ESM, ES or ESM is the standard
+                  format - simplicity and native browser support.
+                </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
@@ -1832,7 +1945,7 @@ function Notes() {
                   in JSX we use className = name;
                 </li>
                 <li>
-                  the files are not incapsulated - they are available everywhere
+                  the files are not encapsulated - they are available everywhere
                   in the code;
                 </li>
                 <li>does not need a converter for SCSS files.</li>
