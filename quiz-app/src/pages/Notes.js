@@ -1468,7 +1468,7 @@ function Notes() {
             <Accordion.Body className="notes__section">
               <h6>Functions are blocks of reusable code that perform a specific task.</h6>
               <p>
-               arguments - added in brackets; allow us to call the function but change the strings inside just how in SCSS we use _mixins 
+               Arguments - added in brackets; allow us to call the function but change the strings inside just how in SCSS we use _mixins 
                but we can change things up without changing the main mixin. Arguments are the values that a function needs to wrk with.
               </p>
               <ul>Times when we might need to write the return statement:
@@ -1480,6 +1480,17 @@ function Notes() {
                 <li>Void function: if the function does not need to return a value, you can omit it all together, or explicitly return undefined.</li>
                 <li>Side Effects Only: if the function performs some actions or side effects (modifying a global variable or logging to the console) but does not need to return any value.</li>
                 <li>Recursive Functions: each recursive call may have its own return statement, but it's not mandatory to have a return statement at the end of the function itself.</li>
+              </ul>
+              <ul>Scopes - define the accessibility and visibility of variables and functions within your code. Two types:
+                <li>Global: variables and functions declared outside of any function or block. They can be accessed from anywhere within the script, including 
+                  inside functions and blocks.
+                </li>
+                <li>Local: variables declared inside of functions or block. They are only accessible within the function or block.</li>
+                <li>*Variables declared by let and const are block-scoped - they are only accessible within the block they are defined (inside loops or conditional statements).</li>
+                <li>*Scopes are similar to nesting in SCSS: a concept of defining a context or container within which certain variables or functions are accessible.
+                  In SCSS nesting helps organize and maintain CSS styles, making them easy to read. Scopes serve the purpose of managing variable visibility and avoiding name conflicts,
+                  contributing to the overall structure and functionality of the code.
+                </li>
               </ul>
             </Accordion.Body>
           </Accordion.Item>
