@@ -1492,6 +1492,23 @@ function Notes() {
                   contributing to the overall structure and functionality of the code.
                 </li>
               </ul>
+              <ul>Modules:
+                <li>Modules allow for encapsulating code into separate files, making it easier to manage and reuse functionality across different part of an application.
+                  Mixins, in this context, refer to reusable code snippets or functions that can be imported from modules and "mixed in" to other objects or classes
+                  to extend their functionality.
+                </li>
+                <li>Encapsulation: avoid naming conflicts.</li>
+                <li>Exporting: variables, functions, classes, objects using export keyword.</li>
+                <li>Importing: the exported items become available for other modules using import keyword.</li>
+                <li>*Just like _mixins, there could be a separate js file linked to the HTML, that holds all variables: 
+                  script src="variables.js" type="module"/script
+                </li>
+                <li>Default exports: primary thing exported from a module.</li>
+                <li>Named exports: export several items from one module.</li>
+                <li>Static Analysis: dependencies are resolved at compile time not runtime.</li>
+                <li>Browser support: modern browsers and Node.js support JS modules but older browsers might need transpilation using tools like Babel to convert module syntax to a format they know. </li>
+                <li>Module Formats: common JS, AMD, ESM, ES or ESM is the standard format - simplicity and native browser support.</li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
