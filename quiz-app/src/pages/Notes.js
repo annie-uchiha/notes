@@ -39,6 +39,9 @@ function Notes() {
         <li>
           <a href="#reactJS">React.js</a>
         </li>
+        <li>
+          <a href="#mongoDB">MongoDB</a>
+        </li>
       </ul>
       <div>
         <h2 className="notes__title" id="html5">
@@ -1107,48 +1110,137 @@ function Notes() {
                 objects.
               </p>
               <img className="notes__img" alt="object-img" src={objectImg} />
-              <p>this keyword is a special identifier referring to the current execution context. 
-                Its value is determined by how a function is called rather than where it is defined:
-                
+              <p>
+                this keyword is a special identifier referring to the current
+                execution context. Its value is determined by how a function is
+                called rather than where it is defined:
               </p>
-              <p>global context - outside of any function this refers to the global object. In browsers, the global object is window.</p>
-              <p>function context - refers to the object that is calling the function - but it depends on how the function is invoked.</p>
-              <p>Method invocation: this refers to the object that the method is called on.</p>
-              <p>A function within an object is called a method. The method uses the properties in the object.</p>
-              <ul>Objects, arrays and functions are reference values because they don't store reference to the memory location where data is stored:
-                <li>Objects: when you assign an object to a variable, what you are storing in that variable is a reference to the memory location
-                  where the object is stored. So if you assign the same object to multiple variables or pass it as an argument to a function, you're working with the same underlying object.
+              <p>
+                global context - outside of any function this refers to the
+                global object. In browsers, the global object is window.
+              </p>
+              <p>
+                function context - refers to the object that is calling the
+                function - but it depends on how the function is invoked.
+              </p>
+              <p>
+                Method invocation: this refers to the object that the method is
+                called on.
+              </p>
+              <p>
+                A function within an object is called a method. The method uses
+                the properties in the object.
+              </p>
+              <ul>
+                Objects, arrays and functions are reference values because they
+                don't store reference to the memory location where data is
+                stored:
+                <li>
+                  Objects: when you assign an object to a variable, what you are
+                  storing in that variable is a reference to the memory location
+                  where the object is stored. So if you assign the same object
+                  to multiple variables or pass it as an argument to a function,
+                  you're working with the same underlying object.
                 </li>
-                <li>Arrays: also objects, similar behavior. When you assign an array to a variable, you are storing a reference to the memory location where the array is stored.
-                  Like objects, if you assign the same array to multiple variables or pass it as an argument to a function you're working with the same underlying array.
+                <li>
+                  Arrays: also objects, similar behavior. When you assign an
+                  array to a variable, you are storing a reference to the memory
+                  location where the array is stored. Like objects, if you
+                  assign the same array to multiple variables or pass it as an
+                  argument to a function you're working with the same underlying
+                  array.
                 </li>
-                <li>Functions: when you define a function, you create an object of type function.</li>
-                <li>Operations that modify objects, arrays, functions affect the underlying data directly. Analogy: ID's in HTML - changes made to one elements' styling or attributes using its ID will affect all elements
-                  with the same ID, just as changes made to an object, array or function using one reference will affect all references to that object, array or function.
+                <li>
+                  Functions: when you define a function, you create an object of
+                  type function.
                 </li>
-                <li>Most times objects are declared with a const because even if we do make a change it is to a property within the object not the object itself.</li>
+                <li>
+                  Operations that modify objects, arrays, functions affect the
+                  underlying data directly. Analogy: ID's in HTML - changes made
+                  to one elements' styling or attributes using its ID will
+                  affect all elements with the same ID, just as changes made to
+                  an object, array or function using one reference will affect
+                  all references to that object, array or function.
+                </li>
+                <li>
+                  Most times objects are declared with a const because even if
+                  we do make a change it is to a property within the object not
+                  the object itself.
+                </li>
                 <li>Primitives can not be changed while objects can be.</li>
-                <li>You can access property of object using dot notation (object.property) or bracket notation (object['property']) - more useful if property 
-                  name is dynamic or contains special characters.
+                <li>
+                  You can access property of object using dot notation
+                  (object.property) or bracket notation (object['property']) -
+                  more useful if property name is dynamic or contains special
+                  characters.
                 </li>
-                <li>Adding and modifying properties - simply assign a value to a new or existing property.</li>
-                <li>Object literals: create objects directly in the code, consists of coma-separated key-value pairs enclosed in curly braces.</li>
-                <li>Iterations: you can loop through the properties of an object using for ... in loop or object.keys(), object.values(), or object.entries() methods</li>
+                <li>
+                  Adding and modifying properties - simply assign a value to a
+                  new or existing property.
+                </li>
+                <li>
+                  Object literals: create objects directly in the code, consists
+                  of coma-separated key-value pairs enclosed in curly braces.
+                </li>
+                <li>
+                  Iterations: you can loop through the properties of an object
+                  using for ... in loop or object.keys(), object.values(), or
+                  object.entries() methods
+                </li>
               </ul>
-              <ul>Built-in methods:
-              <li>object.keys() - returns an array of the objects own enumerable property names (keys).</li>
-              <li>object.values() - returns an array of the objects own enumerable values.</li>
-              <li>object.entries() - returns an array of the objects own enumerable properties (keys; values).</li>
-              <li>object.assign() - copy values from the objects own properties to the target object.</li>
-              <li>object.freeze() - freezes an object and prevents it from being added a new property, existing properties cannot be removed and changed.</li>
-              <li>object.seal(obj) - new properties cannot be added, existing cannot be removed but they can be modified.</li>
-              <li>object.create(proto,[propertiesObject]) - creates a new object with specified prototyped object and optional properties. Prototypal inheritance.</li>
-              <li>object.hasOwnProperty(prop) - returns a boolean indicating wether an object has a specified property as its own (not inherited). </li>
+              <ul>
+                Built-in methods:
+                <li>
+                  object.keys() - returns an array of the objects own enumerable
+                  property names (keys).
+                </li>
+                <li>
+                  object.values() - returns an array of the objects own
+                  enumerable values.
+                </li>
+                <li>
+                  object.entries() - returns an array of the objects own
+                  enumerable properties (keys; values).
+                </li>
+                <li>
+                  object.assign() - copy values from the objects own properties
+                  to the target object.
+                </li>
+                <li>
+                  object.freeze() - freezes an object and prevents it from being
+                  added a new property, existing properties cannot be removed
+                  and changed.
+                </li>
+                <li>
+                  object.seal(obj) - new properties cannot be added, existing
+                  cannot be removed but they can be modified.
+                </li>
+                <li>
+                  object.create(proto,[propertiesObject]) - creates a new object
+                  with specified prototyped object and optional properties.
+                  Prototypal inheritance.
+                </li>
+                <li>
+                  object.hasOwnProperty(prop) - returns a boolean indicating
+                  wether an object has a specified property as its own (not
+                  inherited).{" "}
+                </li>
               </ul>
-              <p>JS objects are dynamic, meaning you can add, modify or delete properties and methods on runtime. This allows for powerful and flexible programming pattern.</p>
-              <p>*JSON: JavaScript Object Natation - lightweight data interchange format. It transmits data between a server and a web application, used for configuration of files and data storage.
-                JSON syntax consists of key-value pairs, where keys are string and values can be strings, numbers, arrays, objects, booleans or null. It allows nesting.
-                It can be parsed into objects using JSON.parse() method and JS objects can be converted tp JSON strings via JSON.stringify(). Used for data transmission, data storage API's.
+              <p>
+                JS objects are dynamic, meaning you can add, modify or delete
+                properties and methods on runtime. This allows for powerful and
+                flexible programming pattern.
+              </p>
+              <p>
+                *JSON: JavaScript Object Natation - lightweight data interchange
+                format. It transmits data between a server and a web
+                application, used for configuration of files and data storage.
+                JSON syntax consists of key-value pairs, where keys are string
+                and values can be strings, numbers, arrays, objects, booleans or
+                null. It allows nesting. It can be parsed into objects using
+                JSON.parse() method and JS objects can be converted tp JSON
+                strings via JSON.stringify(). Used for data transmission, data
+                storage API's.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -2146,6 +2238,88 @@ function Notes() {
                 useEffect(() function curly brackets with the actual function; ,
                 []): - the cleanup function runs before the component unmounts.
               </p>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
+      <div>
+        <h2 className="notes__title" id="mongoDB">
+          MongoDB
+        </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What is MongoDB?</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <p>
+                MongoDB is a type of database. Think of it as a big digital
+                filing cabinet where you store information. Instead of using
+                tables and rows like traditional databases, MongoDB uses
+                documents and collections.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+              Documents and collections in MongoDB
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                <li>
+                  Document: A document is like a record in a filing cabinet.
+                  It’s stored in a format called JSON (JavaScript Object
+                  Notation), which looks like a dictionary in Python or an
+                  object in JavaScript.
+                </li>
+                <li>
+                  Collection: A collection is like a folder that holds multiple
+                  documents. For example, you might have a collection called
+                  "users" that holds documents for each user.
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>CRUD operations</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                CRUD stands for Create, Read, Update, Delete. These are the
+                basic operations you can perform on your data.
+                <li>Create: add new document to collection.</li>
+                <li>Read: Retrieve documents from a collection.</li>
+                <li>Update: Modify existing documents in a collection.</li>
+                <li>Delete: Remove documents from a collection.</li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>
+              MongoDB in Front-end development
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                Use a MongoDB client library (like mongoose or the native
+                mongodb package) to connect your backend to the MongoDB
+                database.
+                <li>
+                  Set Up a Backend: Usually, you use a backend server to
+                  interact with MongoDB. A popular choice for this is Node.js
+                  with Express.js.
+                </li>
+                <li>
+                  Connect to MongoDB: Use a MongoDB client library (like
+                  mongoose or the native mongodb package) to connect your
+                  backend to the MongoDB database.
+                </li>
+                <li>
+                  API Endpoints: Create API endpoints in your backend that the
+                  front end can call to perform CRUD operations.
+                </li>
+                <li>
+                  Fetch Data from Front-End: From your front-end application,
+                  you use fetch or Axios to make HTTP requests to your backend
+                  API.
+                </li>
+              </ul>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
