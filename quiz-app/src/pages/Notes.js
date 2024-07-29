@@ -42,6 +42,7 @@ function Notes() {
         <li>
           <a href="#mongoDB">MongoDB</a>
         </li>
+        <li><a href="#mongoDB">Node.js</a></li>
       </ul>
       <div>
         <h2 className="notes__title" id="html5">
@@ -2318,6 +2319,152 @@ function Notes() {
                   Fetch Data from Front-End: From your front-end application,
                   you use fetch or Axios to make HTTP requests to your backend
                   API.
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
+      <div>
+        <h2 className="notes__title" id="nodeJS">
+          NodeJS
+        </h2>
+        <Accordion>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>What is NodeJS?</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                <li>
+                  JavaScript Runtime: Node.js is a runtime environment that
+                  allows you to run JavaScript code on the server side, outside
+                  of a web browser.
+                </li>
+                <li>
+                  Built on V8 Engine: It uses Google Chrome's V8 JavaScript
+                  engine, which makes it fast and efficient.
+                </li>
+                <li>
+                  Non-Blocking I/O: Node.js uses an event-driven, non-blocking
+                  I/O model, which makes it lightweight and efficient for
+                  handling multiple connections simultaneously.
+                </li>
+              </ul>
+              <ul>
+                Key Features:
+                <li>
+                  Asynchronous Programming: Allows for non-blocking operations
+                  using callbacks, promises, and async/await, making it suitable
+                  for handling I/O-heavy operations.
+                </li>
+                <li>
+                  Single-Threaded Event Loop: Uses a single-threaded model with
+                  an event loop to manage multiple connections efficiently, even
+                  though JavaScript is single-threaded.
+                </li>
+                <li>
+                  Package Ecosystem (npm): Node.js has a rich package ecosystem,
+                  npm (Node Package Manager), which provides thousands of
+                  libraries and modules to extend its functionality.
+                </li>
+              </ul>
+              <ul>
+                Use cases:
+                <li>
+                  Web Servers: Building server-side applications and APIs.
+                </li>
+                <li>
+                  Real-Time Applications: Ideal for applications that require
+                  real-time data processing, like chat applications and online
+                  gaming.
+                </li>
+                <li>
+                  Microservices: Often used for developing microservices due to
+                  its lightweight nature.
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Express.js</Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                <li>
+                  Web Application Framework: Express.js is a minimal and
+                  flexible Node.js web application framework that provides a
+                  robust set of features to build web and mobile applications.
+                </li>
+                <li>
+                  Middleware-Based: It uses middleware to handle HTTP requests
+                  and responses, which allows for modular and reusable code.
+                </li>
+              </ul>
+              <ul>
+                Key Features:
+                <li>
+                  Routing: Provides a powerful routing mechanism to define
+                  routes and handle HTTP methods like GET, POST, PUT, DELETE,
+                  etc.
+                </li>
+                <li>
+                  Middleware Support: Middleware functions are functions that
+                  have access to the request object (req), the response object
+                  (res), and the next middleware function in the application’s
+                  request-response cycle.
+                </li>
+                <li>
+                  Template Engines: Supports various template engines like Pug,
+                  EJS, and Handlebars to generate HTML dynamically.
+                </li>
+                <li>
+                  HTTP Utility Methods: Provides a variety of HTTP utility
+                  methods to handle requests and responses, making it easier to
+                  build APIs and web applications.
+                </li>
+              </ul>
+              <ul>
+                Use cases:
+                <li>
+                  RESTful APIs: Widely used for creating RESTful APIs due to its
+                  simple and flexible routing.
+                </li>
+                <li>
+                  Single-Page Applications (SPAs): Works well as a backend for
+                  single-page applications.
+                </li>
+                <li>
+                  Full-Stack Applications: Often used in combination with
+                  front-end frameworks like React, Angular, or Vue.js to build
+                  full-stack applications.
+                </li>
+              </ul>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>
+              How Node.js and Express.js work together?
+            </Accordion.Header>
+            <Accordion.Body className="notes__section">
+              <ul>
+                <li>
+                  Node.js Server: Node.js acts as the server that runs your
+                  JavaScript code.
+                </li>
+                <li>
+                  Express.js Framework: Express.js runs on top of Node.js and
+                  simplifies the process of handling HTTP requests, managing
+                  routes, and rendering views.
+                </li>
+              </ul>
+              <ul>
+                When building a web application:
+                <li>
+                  Node.js provides the runtime: It handles the execution of
+                  JavaScript on the server side.
+                </li>
+                <li>
+                  Express.js simplifies server code: It provides tools and
+                  abstractions for managing routes, middleware, and HTTP
+                  requests.
                 </li>
               </ul>
             </Accordion.Body>
