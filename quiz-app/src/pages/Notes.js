@@ -18,31 +18,33 @@ import callApplyBind from "../components/apply-call-and-bind.png";
 import polymorphism from "../components/polymorphism.png";
 import abstraction from "../components/abstraction.png";
 import inheritance from "../components/inheritance.png";
+import 'animate.css';
+
 
 function Notes() {
   return (
     <section className="notes">
       <h1>Notes Page</h1>
       <ul className="notes__anchors">
-        <li>
+        <li className="animate__animated animate__swing">
           <a href="#html5">HTML5</a>
         </li>
-        <li>
+        <li className="animate__animated animate__swing">
           <a href="#css">CSS3</a>
         </li>
-        <li>
+        <li className="animate__animated animate__swing">
           <a href="#JavaScript">JavaScript</a>
         </li>
-        <li>
+        <li className="animate__animated animate__swing">
           <a href="#general">Additional</a>
         </li>
-        <li>
+        <li className="animate__animated animate__backInLeft">
           <a href="#reactJS">React.js</a>
         </li>
-        <li>
+        <li className="animate__animated animate__backInRight">
           <a href="#mongoDB">MongoDB</a>
         </li>
-        <li><a href="#mongoDB">Node.js</a></li>
+        <li className="animate__animated animate__jello"><a href="#mongoDB">Node.js</a></li>
       </ul>
       <div>
         <h2 className="notes__title" id="html5">
