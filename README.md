@@ -1,2 +1,2 @@
 # notes
-Practice: React.js
+React.js web application for quick notes and fast quiz
